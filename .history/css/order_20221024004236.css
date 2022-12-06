@@ -1,0 +1,48 @@
+.button {
+	background-color: #1686d9;
+	border: 2px solid white;
+	border-radius: 30px;
+	text-decoration: none;
+	padding: 10px 28px;
+	color: white;
+	margin-top: 10px;
+	display: inline-block;
+}
+
+
+.bg-modal {
+	background-color: rgba(0, 0, 0, 0.4);
+	width: 100%;
+	height: 91%;
+	position: absolute;
+	top: 9%;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+.modal-content {
+    width: 800px;
+    height: 500px;
+    background-color: white;
+}
+
+.button {
+    background-color: blue;
+    padding: 4px;
+}
+
+input {
+    width: 20%;
+    display: block;
+    margin: 15px auto;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    font-size: 42px;
+    transform: rotate(45deg);
+    margin-left: 90%;
+}
+

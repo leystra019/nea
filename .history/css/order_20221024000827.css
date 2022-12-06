@@ -1,0 +1,27 @@
+.bg-modal {
+    width: 100%;
+    height: 91%;
+    background-color: rgba(0,0,0,0.65);
+    position: absolute;
+    top: 9%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    width: 800px;
+    height: 500px;
+    background-color: white;
+}
+
+.button {
+    background-color: blue;
+    padding: px;
+}
+
+input {
+    width: 20%;
+    display: block;
+    margin: 15px auto;
+}
