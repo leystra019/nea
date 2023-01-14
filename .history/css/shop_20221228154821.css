@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    
+  }
+
+  ::marker {
+    display: none !important;
+  }
+
+  .container {
+    padding: 0px 0px 0px 0px !important;
+    margin: 0px 0px 0px 0px !important;
+    display: grid !important;
+    grid-template-areas: "sidebar main";
+    content: none !important;
+  }  
+
+body {
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: hidden; /* hidden Hide horizontal scrollbar */
+
+}
+
+
+.navbar {
+  background-color:#3C485B !important;
+  grid-area: nav;
+  height: 86px;
+  width: 1920px;
+  display: flex;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  justify-content: inline;
+  margin: 0px 0px 0px 0px;
+
+}
+
+.navtop div a {
+	padding: 0 20px;
+	text-decoration: none;
+	color: #c1c4c8;
+	font-weight: bold;
+}
+.navtop div a i {
+	padding: 2px 8px 0 0;
+}
+
+
+.navbar ul li {
+  display: inline-block;
+  font-size: 40px;
+
+
+}
+
+
+.sidebar {
+  background:#3C485B;
+  grid-area: sidebar;
+  height: 994px;
+  width: 86px;
+  display: flex;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  justify-content: inline;
+  overflow: hidden;
+}
+
+.bg {
+    background: #162235;
+    width: 1858px;
+    height: 1018px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+a {
+    margin-top: 22px !important;
+    font-size: 20px;
+    margin-left: 5px;
+    color: #D1E9F2;
+    text-decoration: none;
+    
+}
+
+.blue-link {
+    color: #2F9CC3 !important;
+    font-weight: bold;
+}
+
+.brandname {
+    margin-top: 61px !important;
+    font-size: 20px;
+    margin-left: 5px;
+    text-decoration: none;
+    float: left;
+    left: 347px;
+}
+
+.loginlink {
+    margin-top: 61px !important;
+    font-size: 20px;
+    margin-left: 5px;
+    text-decoration: none;
+    float: right;
+    position: absolute;
+    right: 347px;
+    
+}
+
+  .ordslink {
+    margin-top: 61px !important;
+    font-size: 20px;
+    margin-left: 5px;
+    text-decoration: none;
+    float: right;
+    position: absolute;
+    right: 239px;
+    
+  }
+
+  .baglink {
+    margin-top: 61px !important;
+    font-size: 20px;
+    margin-left: 5px;
+    text-decoration: none;
+    float: right;
+    position: absolute;
+    right: 164px;
+    
+  }
+
+
+
+
+

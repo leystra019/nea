@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login_system</title>
+    <link href="/neatest/css/slogin.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="background">
+        <div class="ln-card">
+            <div class="title">Staff Login</div>
+            <form action="/neatest/php/main php/authlogin.php" method="post">
+                <header>Email/ username</header>
+                <input type="username" name="username" id="username" class="logbox" placeholder="me@email.com">
+                <header>Unique ID</header>
+                <input type="password" name="password" class="logbox" id="password" placeholder="***">
+                <header>Password</header>
+                <input type="password" name="password" class="logbox" id="password" placeholder="*********   ">
+                <input type="submit" value="login" class="submbtn" id="button">
+            </form>
+            <a>Not a staff member?</a>
+            <a href="/neatest/html/ulogin.html" class="blue-link">login here</a>
+        </div>
+        <div class="uloglink">
+            <a href="/neatest/html/slogin.html" class="blue-link">staff login</a>
+        </div>
+    </div>
+</body>
+</html>

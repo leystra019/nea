@@ -1,0 +1,407 @@
+.mediaViewInfo {
+	--web-view-name: Shop;
+	--web-view-id: Shop;
+	--web-scale-on-resize: true;
+	--web-application: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: Shop;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+	outline: 1px dashed red;
+}
+.Shop_Class {
+	position: absolute;
+	width: 1920px;
+	height: 1080px;
+	background-color: rgba(22,34,53,1);
+	overflow: hidden;
+	--web-view-name: Shop;
+	--web-view-id: Shop;
+	--web-scale-on-resize: true;
+	--web-application: true;
+	--web-enable-deep-linking: true;
+	outline: 1px dashed red;
+}
+
+.Line_3_Class {
+	fill: transparent;
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_3 {
+	overflow: visible;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	left: 826.5px;
+	top: 488.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.Group_14_Class {
+	position: absolute;
+	width: 261px;
+	height: 44px;
+	left: 157px;
+	top: 45px;
+	overflow: visible;
+}
+.SneakersNSteals_Class {
+	left: 79px;
+	top: 12px;
+	position: absolute;
+	overflow: visible;
+	width: 183px;
+	height: 22px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	color: rgba(209,233,242,1);
+}
+.Image_12_Class {
+	position: absolute;
+	width: 62px;
+	height: 44px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Rectangle_632_Class {
+	fill: rgba(60,72,91,1);
+}
+.Rectangle_632 {
+	position: absolute;
+	overflow: visible;
+	width: 86px;
+	height: 1080px;
+	left: -5px;
+	top: 0px;
+}
+.Rectangle_633_Class {
+	fill: rgba(60,72,91,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_633 {
+	position: absolute;
+	overflow: visible;
+	width: 1632px;
+	height: 349px;
+	left: 144px;
+	top: 212px;
+}
+.Repeat_Grid_7_Class {
+	position: absolute;
+	width: 1650px;
+	height: 340px;
+	left: 144px;
+	top: 667px;
+	overflow: hidden;
+}
+.Group_Class {
+	position: absolute;
+	width: 474px;
+	height: 340px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Rectangle_636_Class {
+	fill: rgba(60,72,91,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_636 {
+	position: absolute;
+	overflow: visible;
+	width: 474px;
+	height: 340px;
+	left: 0px;
+	top: 0px;
+}
+.Group__Class {
+	position: absolute;
+	width: 474px;
+	height: 340px;
+	left: 582px;
+	top: 0px;
+	overflow: visible;
+}
+.Rectangle_636__Class {
+	fill: rgba(60,72,91,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_636_ {
+	position: absolute;
+	overflow: visible;
+	width: 474px;
+	height: 340px;
+	left: 0px;
+	top: 0px;
+}
+.Group_ba_Class {
+	position: absolute;
+	width: 474px;
+	height: 340px;
+	left: 1164px;
+	top: 0px;
+	overflow: visible;
+}
+.Rectangle_636_ba_Class {
+	fill: rgba(60,72,91,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_636_ba {
+	position: absolute;
+	overflow: visible;
+	width: 474px;
+	height: 340px;
+	left: 0px;
+	top: 0px;
+}
+.Latest_Items_Class {
+	left: 181px;
+	top: 234px;
+	position: absolute;
+	overflow: visible;
+	width: 508px;
+	height: 76px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 64px;
+	color: rgba(206,230,239,1);
+}
+.Repeat_Grid_8_Class {
+	position: absolute;
+	width: 31px;
+	height: 45px;
+	left: 23px;
+	top: 13px;
+	overflow: hidden;
+	--web-animation: fadein undefineds undefined;
+	--web-action-type: view;
+	--web-action-target: Shop__1;
+	cursor: pointer;
+}
+.Group_bd_Class {
+	position: absolute;
+	width: 6px;
+	height: 45px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.Rectangle_637_Class {
+	fill: rgba(255,255,255,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_637 {
+	position: absolute;
+	overflow: visible;
+	width: 6px;
+	height: 45px;
+	left: 0px;
+	top: 0px;
+}
+.Group_bf_Class {
+	position: absolute;
+	width: 6px;
+	height: 45px;
+	left: 12px;
+	top: 0px;
+	overflow: visible;
+}
+.Rectangle_637_bg_Class {
+	fill: rgba(255,255,255,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_637_bg {
+	position: absolute;
+	overflow: visible;
+	width: 6px;
+	height: 45px;
+	left: 0px;
+	top: 0px;
+}
+.Group_bh_Class {
+	position: absolute;
+	width: 6px;
+	height: 45px;
+	left: 24px;
+	top: 0px;
+	overflow: visible;
+}
+.Rectangle_637_bi_Class {
+	fill: rgba(255,255,255,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_637_bi {
+	position: absolute;
+	overflow: visible;
+	width: 6px;
+	height: 45px;
+	left: 0px;
+	top: 0px;
+}
+.Repeat_Grid_13_Class {
+	position: absolute;
+	width: 249px;
+	height: 22px;
+	left: 1527px;
+	top: 56px;
+	overflow: hidden;
+}
+.Group_bk_Class {
+	position: absolute;
+	width: 47px;
+	height: 22px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.n_login_Class {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 48px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	color: rgba(47,156,195,1);
+}
+.Group_bm_Class {
+	position: absolute;
+	width: 56px;
+	height: 22px;
+	left: 99px;
+	top: 0px;
+	overflow: visible;
+}
+.orders_Class {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 57px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	color: rgba(47,156,195,1);
+}
+.Group_bo_Class {
+	position: absolute;
+	width: 32px;
+	height: 22px;
+	left: 198px;
+	top: 0px;
+	overflow: visible;
+}
+.bag_Class {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 33px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	color: rgba(47,156,195,1);
+}
+.Tops_Class {
+	left: 165px;
+	top: 687px;
+	position: absolute;
+	overflow: visible;
+	width: 159px;
+	height: 76px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 64px;
+	color: rgba(206,230,239,1);
+}
+.Bottomwear_Class {
+	left: 744px;
+	top: 687px;
+	position: absolute;
+	overflow: visible;
+	width: 434px;
+	height: 76px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 64px;
+	color: rgba(206,230,239,1);
+}
+.Other_Class {
+	left: 1343px;
+	top: 690px;
+	position: absolute;
+	overflow: visible;
+	width: 434px;
+	height: 76px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 64px;
+	color: rgba(206,230,239,1);
+}

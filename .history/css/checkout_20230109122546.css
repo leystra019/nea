@@ -1,0 +1,18 @@
+    .checkoutcontainer {
+    width: 1541px;
+    height: 518px;
+    display: grid; 
+    grid-template-columns: 770.5px 770.5px; 
+    grid-template-rows: 38px 1503px; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+        "lefthead righthead"
+        "leftcontent rightcontent";
+    }
+
+    .left-head {
+        grid-area: "lefthead";
+        text-align: center;
+        width: 770.5px;
+        height: 38px;
+    }

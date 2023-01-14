@@ -1,0 +1,100 @@
+* {
+    margin: 0px !important;
+    padding: 0px !important;
+
+    
+  }
+
+.background {
+  width: 1920px;
+  height: 1080px;
+  background-color: #162235;
+
+}  
+  
+
+.ln-card {
+    text-align: center;
+    height: 637px;
+    width: 464px;
+    background-color: #3C485B;
+    border: 1px;
+    padding-top: 46px;
+    border-radius: 6px;
+    margin: auto !important;
+    padding-top: auto;
+
+}
+
+.title {
+  font-size: 30px;
+  text-align: center;
+  color: #D1E9F2;
+}
+
+
+b {
+  font-size: 22px;
+  margin-left: 60px;
+  margin-bottom: 0;
+
+}
+
+.profile-img {
+  height: 204px;
+  margin-top: 96px;
+  margin-left: 184px;
+  width: 255px;
+}
+
+.logbox {
+  border-radius: 4px;
+  border: 1;
+  height: 52px;
+  width: 388px;
+  background-color: #3C485B;
+  border-color: #c0c0c0;
+  font-size: 24px;
+  text-align: left;
+  padding-left: 25px !important;
+  margin: auto !important;
+  color: grey;
+
+}
+
+.submbtn {
+  margin-bottom: 40px;
+  margin: auto !important;
+  width: 187px;
+  height: 52px;
+  background-color: #2F9CC3;
+  color: white;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-top: 44px !important;
+  display: inline-block;
+
+
+}
+
+.login form input[type="submit"]:hover {
+	background-color: #2868c7;
+  	transition: background-color 0.2s;
+}
+
+a {
+  font-size: 20px;
+  margin-left: 5px;
+  color: grey;
+  
+}
+
+header {
+  color: #D1E9F2;
+  padding-bottom: 12px !important;
+  padding-top: 44px !important;
+  font-size: 16px;
+  margin-left: 33px !important;
+  text-align: left;
+}

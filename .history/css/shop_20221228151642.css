@@ -1,0 +1,17 @@
+* {
+    margin: 0px !important;
+    padding: 0px !important;
+  }
+
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  
+  .background {
+  width: 1920px;
+  height: 1080px;
+  background-color: #162235;
+  
+  }
+  

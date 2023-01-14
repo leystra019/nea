@@ -1,0 +1,38 @@
+* {
+    margin: 0px !important;
+  }
+
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  
+
+  .bag-card {
+    margin-top: 33px !important;
+    margin-left: 76px !important;
+    height: 655px;
+    width: 1607px !important;
+    background-color: #3C485B;
+    border: 1px;
+    padding-top: 56px;
+    padding-left: 56px;
+
+    border-radius: 3px;
+  }
+
+  .table-bordered {
+    text-align: center;
+    border-collapse: 2px dashed #707070;
+    width: 1541px;
+  }
+
+  .table-bordered tr th{
+    font-size: 18px;
+    color: #CEE6EF;
+    background-color: #162235;
+    padding: 0px;
+
+  }
+
+  

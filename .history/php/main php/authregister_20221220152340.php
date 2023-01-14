@@ -1,0 +1,66 @@
+<?php
+    // these variables contain the credentials for the database
+    $servername   = "localhost";
+    $database = "neatest";
+    $username = "root";
+    $password = "";
+    // create connection
+    $conn = mysqli_connect($servername, $username, $password, $database);
+    // check connection
+    if (mysqli_connect_error()) {
+        // if connection fails, die and tell the user
+        echo "Connection failed. Please contact the admin of this website admin@sns.co.uk";
+        die("Connection failed: " . mysqli_connect_error());
+    }
+    else {
+        // we are taking the input from the user and storing it into variables
+        $html_name = mysqli_real_escape_string($conn, $_POST['name']);
+        $html_username = mysqli_real_escape_string($conn, $_POST['username']);
+        $html_password1 = mysqli_real_escape_string($conn, $_POST['password1']);
+        $html_password2 = mysqli_real_escape_string($conn, $_POST['password2']);
+        // hash the passwords for security
+        $password1_hash = password_hash($html_password1, PASSWORD_DEFAULT);
+        // check if the passwords are the same
+        if (empty($_POST["name"])) {
+            die("Name is required");
+        }
+        
+        if ( ! filter_var($_POST["username"], FILTER_VALIDATE_EMAIL)) {
+            die("Valid email is required");
+        }
+        
+        if (strlen($_POST["password2"]) < 8) {
+            die("Password must be at least 8 characters");
+        }
+        
+        if ( ! preg_match("/[a-z]/i", $_POST["password2"])) {
+            die("Password must contain at least one letter");
+        }
+        
+        if ( ! preg_match("/[0-9]/", $_POST["password2"])) {
+            die("Password must contain at least one number");
+        }
+        
+        if ($_POST["password1"] !== $_POST["password2"]) {
+            die("Passwords must match");
+        }
+
+        // prepare statement
+        $stmt = mysqli_prepare($conn, "INSERT INTO users (name, email, password1_hash) VALUES (?, ?, ?)");
+        // bind variables to statement
+        mysqli_stmt_bind_param($stmt, "sss", $html_name, $html_username, $password1_hash);
+        // execute statement
+        if (mysqli_stmt_execute($stmt)) {
+            // redirect to success page
+            header("Location: signupsuccess.html");
+            exit;
+        } else {
+            // check if email is already taken
+            if (mysqli_errno($conn) === 1062) {
+                die("email already taken");
+            } else {
+                die(mysqli_error($conn) . " " . mysqli_errno($conn));
+            }
+        }
+    }
+?>

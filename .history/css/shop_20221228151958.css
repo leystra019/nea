@@ -1,0 +1,28 @@
+* {
+    margin: 0px !important;
+    padding: 0px !important;
+  }
+
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  
+  .background {
+  width: 1920px;
+  height: 1080px;
+  background-color: #162235;
+  
+  }
+
+  .sidebar {
+    background:#3C485B;
+    grid-area: sidebar;
+    height: 994px;
+    width: 81px;
+    display: flex;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    justify-content: inline;
+    overflow: hidden;
+  }

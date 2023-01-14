@@ -1,0 +1,20 @@
+* {
+    margin: 0px !important;
+  }
+
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  
+
+  .bag-card {
+    margin-top: 33px !important;
+    height: 711px;
+    background-color: #3C485B;
+    border: 1px;
+    padding-top: 33px;
+    border-radius: 3px;
+  }
+
+  

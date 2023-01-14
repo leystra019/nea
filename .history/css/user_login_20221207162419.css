@@ -1,0 +1,473 @@
+.mediaViewInfo {
+	--web-view-name: User login;
+	--web-view-id: User_login;
+	--web-scale-on-resize: true;
+	--web-application: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: User_login;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#User_login {
+	position: absolute;
+	width: 1920px;
+	height: 1080px;
+	background-color: rgba(22,34,53,1);
+	overflow: hidden;
+	--web-view-name: User login;
+	--web-view-id: User_login;
+	--web-scale-on-resize: true;
+	--web-application: true;
+	--web-enable-deep-linking: true;
+}
+@keyframes  {
+
+
+}
+#Line_3 {
+	fill: transparent;
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_3 {
+	overflow: visible;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	left: 826.5px;
+	top: 488.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Forgot_password {
+	left: 1012px;
+	top: 540px;
+	position: absolute;
+	overflow: visible;
+	width: 270px;
+	height: 18px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	color: rgba(47,156,195,1);
+}
+#Ellipse_5 {
+	fill: rgba(255,255,255,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Ellipse_5 {
+	position: absolute;
+	overflow: visible;
+	width: 18px;
+	height: 18px;
+	left: 835px;
+	top: 690px;
+}
+#Group_13 {
+	position: absolute;
+	width: 1396.5px;
+	height: 1371px;
+	left: 725px;
+	top: -598px;
+	overflow: visible;
+}
+#Group_12 {
+	position: absolute;
+	width: 464px;
+	height: 512px;
+	left: 0px;
+	top: 828px;
+	overflow: visible;
+}
+#Rectangle_631 {
+	fill: rgba(60,72,91,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_631 {
+	position: absolute;
+	overflow: visible;
+	width: 464px;
+	height: 512px;
+	left: 0px;
+	top: 0px;
+}
+#User_Login {
+	left: 161px;
+	top: 852px;
+	position: absolute;
+	overflow: visible;
+	width: 169px;
+	height: 36px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 30px;
+	color: rgba(209,233,242,1);
+}
+#Repeat_Grid_3 {
+	position: absolute;
+	width: 417px;
+	height: 187px;
+	left: 23.5px;
+	top: 945px;
+	overflow: hidden;
+}
+#Group {
+	position: absolute;
+	width: 1455px;
+	height: 1373px;
+	left: 0px;
+	top: -1317px;
+	overflow: visible;
+}
+#Rectangle_13 {
+	fill: rgba(60,72,91,1);
+	stroke: rgba(192,192,192,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_13 {
+	position: absolute;
+	overflow: visible;
+	width: 417px;
+	height: 52px;
+	left: 0px;
+	top: 1321px;
+}
+#Text {
+	left: 1455px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 1px;
+	white-space: nowrap;
+	text-align: left;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 11px;
+	color: rgba(0,0,0,1);
+}
+#Group_ {
+	position: absolute;
+	width: 1455px;
+	height: 1373px;
+	left: 0px;
+	top: -1197px;
+	overflow: visible;
+}
+#Rectangle_13_ba {
+	fill: rgba(60,72,91,1);
+	stroke: rgba(192,192,192,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_13_ba {
+	position: absolute;
+	overflow: visible;
+	width: 417px;
+	height: 52px;
+	left: 0px;
+	top: 1321px;
+}
+#Text_bb {
+	left: 1455px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 1px;
+	white-space: nowrap;
+	text-align: left;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 11px;
+	color: rgba(0,0,0,1);
+}
+#Group_11 {
+	position: absolute;
+	width: 1379px;
+	height: 1225px;
+	left: 17.5px;
+	top: 0px;
+	overflow: visible;
+}
+#Rectangle_13_bd {
+	fill: rgba(47,156,195,1);
+	stroke: rgba(192,192,192,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_13_bd {
+	position: absolute;
+	overflow: visible;
+	width: 417px;
+	height: 52px;
+	left: 0px;
+	top: 1173px;
+}
+#Text_be {
+	left: 1379px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 1px;
+	white-space: nowrap;
+	text-align: left;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 11px;
+	color: rgba(47,156,195,1);
+}
+#meemailcom {
+	left: 35.5px;
+	top: 958px;
+	position: absolute;
+	overflow: visible;
+	width: 240px;
+	height: 28px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	color: rgba(209,233,242,1);
+}
+#Text_bg {
+	left: 35.5px;
+	top: 1086px;
+	position: absolute;
+	overflow: hidden;
+	width: 240px;
+	height: 17px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	color: rgba(209,233,242,1);
+}
+#Password {
+	left: 23.5px;
+	top: 1042.37px;
+	position: absolute;
+	overflow: visible;
+	width: 240px;
+	height: 19px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	color: rgba(209,233,242,1);
+}
+#Login {
+	left: 204px;
+	top: 1189px;
+	position: absolute;
+	overflow: visible;
+	width: 47px;
+	height: 18px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	color: rgba(255,255,255,1);
+}
+#Email {
+	left: 23.5px;
+	top: 921px;
+	position: absolute;
+	overflow: visible;
+	width: 240px;
+	height: 19px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	color: rgba(209,233,242,1);
+}
+#Email_bk {
+	left: 344.5px;
+	top: 1138px;
+	position: absolute;
+	overflow: visible;
+	width: 240px;
+	height: 19px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	color: rgba(209,233,242,1);
+}
+#Line_34 {
+	fill: transparent;
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_34 {
+	overflow: visible;
+	position: absolute;
+	width: 412.002px;
+	height: 2px;
+	left: 17.5px;
+	top: 1250.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#or {
+	left: 216px;
+	top: 1240px;
+	position: absolute;
+	overflow: visible;
+	width: 22px;
+	height: 18px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	color: rgba(165,162,162,1);
+}
+#Rectangle_630 {
+	fill: rgba(60,72,91,1);
+	stroke: rgba(192,192,192,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_630 {
+	position: absolute;
+	overflow: visible;
+	width: 417px;
+	height: 41px;
+	left: 17.5px;
+	top: 1276.5px;
+}
+#sign_in_with_Google {
+	left: 155px;
+	top: 1288px;
+	position: absolute;
+	overflow: visible;
+	width: 139px;
+	height: 18px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	color: rgba(209,233,242,1);
+}
+#Dont_have_an_account_register {
+	left: 96px;
+	top: 1352px;
+	position: absolute;
+	overflow: visible;
+	width: 273px;
+	height: 19px;
+	--web-animation: fadein undefineds undefined;
+	--web-action-type: view;
+	--web-action-target: User_register;
+	cursor: pointer;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	color: rgba(209,233,242,1);
+}
+#Group_14 {
+	position: absolute;
+	width: 261px;
+	height: 44px;
+	left: 157px;
+	top: 45px;
+	overflow: visible;
+}
+#SneakersNSteals {
+	left: 79px;
+	top: 12px;
+	position: absolute;
+	overflow: visible;
+	width: 183px;
+	height: 22px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	color: rgba(209,233,242,1);
+}
+#Image_12 {
+	position: absolute;
+	width: 62px;
+	height: 44px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#staff_login {
+	left: 1615px;
+	top: 56px;
+	position: absolute;
+	overflow: visible;
+	width: 86px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	color: rgba(47,156,195,1);
+}
+#Show {
+	left: 1107.5px;
+	top: 488.5px;
+	position: absolute;
+	overflow: visible;
+	width: 48px;
+	height: 18px;
+	text-align: left;
+	font-family: Helvetica Neue;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	color: rgba(209,233,242,1);
+}

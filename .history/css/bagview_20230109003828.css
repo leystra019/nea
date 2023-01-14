@@ -1,0 +1,72 @@
+* {
+    margin: 0px !important;
+  }
+
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  
+
+  .bag-card {
+    margin-top: 33px !important;
+    margin-left: 76px !important;
+    height: 655px;
+    width: 1607px !important;
+    background-color: #3C485B;
+    border: 1px;
+    padding-top: 56px;
+    padding-left: 56px;
+
+    border-radius: 3px;
+  }
+
+  table {
+    border-collapse: collapse !important;
+    border-spacing: 0px !important;
+
+  }
+
+  .table-bordered {
+    text-align: center;
+    width: 1539px;
+  }
+
+  .tablehead_box {
+    border: #707070 2px solid;
+    width: 100%;
+    height: 77px;
+  }
+
+  .table-bordered tr th{
+    font-size: 18px;
+    color: #CEE6EF;
+    background-color: #162235;
+    height: 75px;
+
+  }
+
+  .table-bordered tr th{
+    font-size: 18px;
+    color: #CEE6EF;
+    background-color: #162235;
+    height: 75px;
+
+  }
+
+  .tableprod_box {
+    border: #707070 2px solid;
+    width: 100%;
+    height: 119px
+  }
+
+  .table-bordered tr td{
+    font-size: 18px;
+    color: #3C485B;
+    background-color: white;
+    height: 117px;
+  }
+
+  td:nth-child(5) a.button {
+    margin-left: 5px;
+  }

@@ -1,0 +1,97 @@
+* {
+    margin: 0px !important;
+    padding: 0px !important;
+    text-decoration: none;
+    
+  }
+
+.background {
+  width: 1920px;
+  height: 1080px;
+  background-color: #162235;
+  padding-top: 123px;
+
+}  
+  
+
+.ln-card {
+    height: 512px;
+    width: 464px;
+    background-color: #3C485B;
+    border: 1px;
+    padding-top: 46px;
+    border-radius: 6px;
+    margin: auto !important;
+    margin-top: auto;
+}
+
+.title {
+  font-size: 30px;
+  text-align: center;
+  color: #D1E9F2;
+  padding-top: 32px;
+}
+
+b {
+  font-size: 22px;
+  margin-left: 60px;
+  margin-bottom: 0;
+
+}
+
+.profile-img {
+  height: 204px;
+  margin-top: 96px;
+  margin-left: 184px;
+  width: 255px;
+}
+
+.logbox {
+  margin-left: 104px;
+  margin-right: 104px;
+  border-radius: 16px;
+  border: 1px;
+  height: 52px;
+  width: 417px;
+  background-color: #3C485B;
+  border-color: #c0c0c0;
+  font-size: 22px;
+  text-align: left;
+  margin-top: 43px;
+  color: grey;
+  
+
+}
+
+.submbtn {
+  position: sticky;
+  margin-top: 25px;
+  margin-left: 250px;
+  margin-bottom: 40px;
+  width: 140px;
+  height: 58px;
+  background-color: #39C1F1;
+  text-align: center;
+  border-radius: 16px;
+  font-size: 22px;
+
+}
+
+.login form input[type="submit"]:hover {
+	background-color: #2868c7;
+  	transition: background-color 0.2s;
+}
+
+a {
+  font-size: 20px;
+  margin-left: 5px;
+  color: grey;
+  
+}
+
+header {
+  color: #D1E9F2;
+  padding-bottom: 12px !important;
+  padding-top: 44px !important;
+  font-size: 16px;
+}
