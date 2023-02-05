@@ -1,0 +1,159 @@
+    .checkoutcontainer {
+        width: 1541px;
+        height: 518px;
+        display: grid !important; 
+        grid-template-columns: 770.5px 770.5px; 
+        grid-template-rows: 38px 1503px; 
+        gap: 0px 0px;
+        border: 2px solid #707070;
+        grid-template-areas: 
+            "lefthead righthead"
+            "leftcontent rightcontent"
+            "bottom row";
+    }
+
+    .checkedoutcontainer {
+        width: 1541px;
+        height: 518px;
+        gap: 0px 0px;
+        border: 2px solid #707070;
+        margin-top: 30px;
+    }
+
+
+    .left-head,
+    .right-head {
+        display: flex;
+        align-items: center;
+    }
+
+    .left-head a,
+    .right-head a {
+        margin: 0;
+    }
+
+    .left-head {
+        grid-area: lefthead;
+        padding-left: 18px;
+        background-color: #162235;
+        border: 2px solid #707070;
+    }
+
+    .left-head a {
+        font-size: 18px;
+        font-style: bold;
+        color: #CEE6EF;
+    }
+
+    .left-content {
+        grid-area: leftcontent;
+        height: 480px;
+        border: 2px solid #707070;
+
+    }
+
+    
+
+    .right-head {
+        grid-area: righthead;
+        padding-left: 18px;
+        background-color: #162235;
+        border: 2px solid #707070;
+        margin-bottom: 50px;
+    }
+
+
+    .right-head a {
+        font-size: 18px;
+        font-style: bold;
+        color: #CEE6EF;
+    }
+
+    .right-content {
+        grid-area: rightcontent;
+        height: 480px;
+        border: 2px solid #707070;
+
+    }
+
+    .flex-selectedpayment {
+        margin-top: 57px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        padding-left: 18px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        width: 659px;
+        text-align: left;
+        background-color: white;
+        border-radius: 4px;
+        border: 1px solid #707070;
+    }
+
+    .flex-selectedpayment a {
+        color: #3C485B;
+        font-size: 18px;
+    }
+
+    form {
+        margin-left: 24px !important;
+    }
+
+    .short-form  {
+       width: 319px;
+       height: 58px;
+       border-radius: 4px;
+       text-align: left;
+       margin-top: 15px !important;
+       padding-left: 20px;
+       border-spacing: 24px;
+       margin-right: 20px !important;
+    }
+
+    .long-form  {
+       width: 679.5px;
+       height: 58px;
+       border-radius: 4px;
+       text-align: left;
+       margin-right: 24px !important;
+       margin-top: 15px !important;
+       padding-left: 20px;
+    }
+
+    div.finalch_container {
+        margin-top: 95px !important;
+        width: 1541px;
+        height: 110px;
+        box-sizing: border-box;
+        color: #CEE6EF;
+        text-decoration: bold;
+        font-size: 18px;
+        border: #707070 3px solid;
+    }
+
+    .saveinfotxt {
+        font-size: 18px;
+        color: #CEE6EF;
+        margin-top: 6px !important;
+        margin-left: 15px !important;
+    }
+
+    .bag-card-2{
+        margin-top: 123px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        height: 494px;
+        width: 921px !important;
+        background-color: #3C485B;
+        border: 1px;
+        border-radius: 3px;
+      }
+
+      
+      
+      
+      
+
+    
+
+    

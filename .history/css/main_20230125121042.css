@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    
+  }
+
+  ::marker {
+    display: none !important;
+  }
+
+  .container {
+    padding: 0px 0px 0px 0px !important;
+    margin: 0px 0px 0px 0px !important;
+    display: grid !important;
+    grid-template-areas: "nav nav" "sidebar main";
+    content: none !important;
+  }  
+
+body {
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: hidden; /* hidden Hide horizontal scrollbar */
+
+}
+
+
+.navbar {
+  background-color:#3C485B !important;
+  grid-area: nav;
+  height: 86px;
+  width: 1920px;
+  display: flex;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  justify-content: inline;
+  margin: 0px 0px 0px 0px;
+
+}
+
+.navtop div a {
+	padding: 0 20px;
+	text-decoration: none;
+	color: #c1c4c8;
+	font-weight: bold;
+}
+.navtop div a i {
+	padding: 2px 8px 0 0;
+}
+
+
+.navbar ul li {
+  display: inline-block;
+  font-size: 40px;
+
+
+}
+
+
+.sidebar {
+  background:#3C485B;
+  grid-area: sidebar;
+  height: 994px;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  justify-content: inline;
+  overflow: hidden;
+}
+
+.bg {
+    background: #162235;
+    width: 1858px;
+    height: 1018px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+
+/* 
+I need to make it so the sidebar symbol "=" is enlarged and rotate it
+<nav class="sidebar">
+<ul>
+    <li><a href="/neatest/html/home.html">=</a></li>
+</ul>
+</nav> */

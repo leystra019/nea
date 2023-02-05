@@ -1,0 +1,52 @@
+* {
+    margin: 0px !important;
+    padding: 0px !important;
+    display: inline-block;
+  }
+
+
+.container2 {
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-rows: 350px 340px; 
+    gap: 53px 0px; 
+  }
+  
+  .top-box {
+    background-color: #3C485B;
+    width: 1632px;
+    height: 349px;
+    margin-left: 64px;
+  }
+  
+  .topsbox {
+    width: 474px;
+    height: 340px;
+    background-color: #3C485B;
+    margin-left: 64px;
+    margin-right: 108px;
+  }
+  
+  .trousersbox {
+    width: 474px;
+    height: 340px;
+    background-color: #3C485B;
+    margin-right: 108px;
+  }
+  
+  .otheritemsbox {
+    width: 474px;
+    height: 340px;
+    background-color: #3C485B;
+    margin-right: 108px;
+  }
+  
+  h7 {
+    font-size: 64px;
+    margin-top: 39px;
+    margin-left: 40px;
+    font-style: bold;
+    color: #CEE6EF;
+  
+  
+  }
