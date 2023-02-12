@@ -1,0 +1,111 @@
+div.l_side {
+    display: grid;
+    width: 963px;
+    height: 980px;
+    grid-area: l_side;
+    grid-template-areas: "head head"
+    "top top"
+    "b b";
+    margin: 0px 0px 0px 0px;
+    padding: 60px 0px 0px 0px;
+    float: left;
+  
+  }
+  
+  
+  .success_cards {
+    height: 282px;
+    padding: 0px 0px 0px 0px;
+    grid-template-areas: "head";
+    margin-left: 62ox;
+  }
+  
+  .stockn {
+    height: 156px;
+    width: 365px;
+    margin-left: 48px;
+    margin-bottom: 63px;
+    margin-top: 63px;
+    background-color: #3C485B;
+    border-radius: 4px;
+    text-align: right;
+    display: inline-block;
+  }
+  
+  
+  
+  .Stock-sold {
+    height: 156px;
+    width: 365px;
+    margin-left: 48px;
+    margin-bottom: 63px;
+    margin-top: 63px;
+    background-color: #3C485B;
+    border-radius: 4px;
+    text-align: right;
+    display: inline-block;
+  }
+  
+  .Spent {
+    height: 156px;
+    width: 365px;
+    margin-left: 48px;
+    margin-bottom: 63px;
+    margin-top: 63px;
+    background-color: #3C485B;
+    border-radius: 4px;
+    text-align: right;
+    display: inline-block;
+  }
+  
+  .Profit {
+    height: 156px;
+    width: 365px;
+    margin-left: 48px;
+    margin-bottom: 63px;
+    margin-top: 63px;
+    background-color: #3C485B;
+    border-radius: 4px;
+    text-align: right;
+    display: inline-block;
+  }
+  
+  .lower div {
+    grid-template-areas: "left right";
+    
+  }
+  .gph_card {
+    width:816px;
+    height: 630px;
+    margin-left: 48px;
+    border-radius: 8px 0px 0px 8px;
+    background-color: #3C485B;
+    position: left;
+  
+  }
+  
+  .perf_cards {
+    display: flex;
+    position: right;
+  
+  }
+  
+  .topsale {
+    margin: 0px;
+    width: 816px;
+    height: 272
+  }
+  
+  .undsale {
+    margin: 0px;
+    width: 816px;
+    height: 272
+  }
+  
+  .order_card {
+    height:800px;
+    order: inline;
+    margin: auto;
+  
+  
+  }

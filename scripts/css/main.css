@@ -57,7 +57,7 @@ body {
 
 
 .sidebar{
-  background:#3C485B;
+  background:#3C485B !important;
   position: fixed;
   grid-area: sidebar;
   left: 0;
@@ -121,17 +121,8 @@ li {
 
 .bg {
     background: #162235;
-    width: 1858px;
+    width: 1920px;
     height: 1018px;
     padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px 0px;
 }
-
-
-/* 
-I need to make it so the sidebar symbol "=" is enlarged and rotate it
-<nav class="sidebar">
-<ul>
-    <li><a href="/neatest/html/home.html">=</a></li>
-</ul>
-</nav> */
