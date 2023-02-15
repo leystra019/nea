@@ -87,7 +87,7 @@
             <i class="fa-sharp fa-solid fa-bars" id="btn" class="barsmenu" style="font-size: 31px; color: #FFFFFF;"></i>
             <ul class="sidebar-list" id="sidebar-list">
                 <li>
-                    <a href="/neatest/scripts/php/shop/itemcategories/allproducts.php" class="item-link">All</a>
+                    <a href="/neatest/scripts/php/shop/allproducts.php" class="item-link">All</a>
                 </li>
                 <li>
                     <a href="/neatest/scripts/php/shop/itemcategories/newproducts.php" class="item-link">New Items</a>

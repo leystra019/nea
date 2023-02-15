@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="/neatest/scripts/css/shop/shop.css">
     <link rel="stylesheet" href="/neatest/css/shshopallitems.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script> 
+        history.pushState({page: 'allproducts'}, 'All Products', '/neatest/scripts/php/shop/allproducts.php'); 
+    </script>
 </head>
 <body>
     <div class="container">
@@ -17,31 +20,31 @@
             <i class="fa-sharp fa-solid fa-bars" id="btn" style="font-size: 31px; color: #FFFFFF;"></i>
             <ul class="sidebar-list" id="sidebar-list">
                 <li>
-                    <a href="/neatest/scripts/php/shop/allproducts.php" class="item-link">All</a>
+                    <a href="/neatest/scripts/shop/allproducts.php" class="item-link">All</a>
                 </li>
                 <li>
-                    <a href="/neatest/scripts/php/shop/itemcategories/newproducts.php" class="item-link">New Items</a>
+                    <a href="/neatest/html/shop/allproducts.php" class="item-link">New Items</a>
                 </li>
                 <li>
-                    <a href="/neatest/scripts/php/shop/itemcategories/hats.php" class="item-link">Hats</a>
+                    <a href="/neatest/html/shop/allproducts.php" class="item-link">Hats</a>
                 </li>
                 <li>
-                    <a href="/neatest/scripts/php/shop/itemcategories/outerwear.php" class="item-link">Outerwear</a>
+                    <a href="/neatest/html/shop/allproducts.php" class="item-link">Outerwear</a>
                 </li>
                 <li>
-                    <a href="/neatest/scripts/php/shop/itemcategories/sweatshirts.php" class="item-link">Sweatshirts</a>
+                    <a href="/neatest/html/shop/allproducts.php" class="item-link">Sweatshirts</a>
                 </li>
                 <li>
-                    <a href="/neatest/scripts/php/shop/itemcategories/shirts.php" class="item-link">Shirts</a>
+                    <a href="/neatest/html/shop/allproducts.php" class="item-link">Shirts</a>
                 </li>
                 <li>
-                    <a href="/neatest/scripts/php/shop/itemcategories/socks.php" class="item-link">Bottomwear</a>
+                    <a href="/neatest/html/shop/bottomwear.php" class="item-link">Bottomwear</a>
                 </li>
                 <li>
-                    <a href="/neatest/scripts/php/shop/itemcategories/socks.php" class="item-link">Socks</a>
+                    <a href="/neatest/html/shop/allproducts.php" class="item-link">Socks</a>
                 </li>
                 <li>
-                    <a href="/neatest/scripts/php/shop/itemcategories/footwear.php" class="item-link">Footwear</a>
+                    <a href="/neatest/html/shop/allproducts.php" class="item-link">Footwear</a>
                 </li>
             </ul>
         </nav>
@@ -85,7 +88,7 @@
                             // we need the product_id echoes
                             echo "<a href='product.php?id=$product_id'>";
                             // output the product image in HTML - not working
-                            echo "<img src=$product_image width='150px' height='150px' margin-right='62px !important' alt=''>";
+                            echo "<img src=$product_image; width='150px' height='150px' margin-right='62px !important' alt=''>";
                         }
                     }
                     

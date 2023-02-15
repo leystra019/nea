@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="/neatest/scripts/css/shop/shop.css">
     <link rel="stylesheet" href="/neatest/css/shshopallitems.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script> 
+        history.pushState({page: 'allproducts'}, 'All Products', '/neatest/scripts/php/shop/allproducts.php'); 
+    </script>
 </head>
 <body>
     <div class="container">
@@ -85,7 +88,7 @@
                             // we need the product_id echoes
                             echo "<a href='product.php?id=$product_id'>";
                             // output the product image in HTML - not working
-                            echo "<img src=$product_image width='150px' height='150px' margin-right='62px !important' alt=''>";
+                            echo "<img src=$product_image; width='150px' height='150px' margin-right='62px !important' alt=''>";
                         }
                     }
                     

@@ -49,7 +49,9 @@
             $remove_item = $_GET['remove'];
             // give entire contents of bag
             $current_bag = json_decode($_COOKIE['bag'], true);
+            // if down to last item, remove it completely
             if (array_key_exists($remove_item, $current_bag)) {
+                // if down to last item, remove it completely
                 if ($current_bag[$remove_item] <= 1) {
                     // remove selected item from list
                     unset($current_bag[$remove_item]);

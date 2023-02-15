@@ -171,7 +171,12 @@
                         <input type="hidden" name="price" value="<?php echo $price; ?>">
                         <input type="hidden" name="image" value="<?php echo $image; ?>">
                         <input type="submit" value="<?php echo ($product_out_of_stock == true) ? 'Out of Stock' : 'Add to Bag'; ?>"  id="bagbtn" class="bagbtn<?php echo ($product_out_of_stock == true) ? ' bagbtn-out-of-stock' : ''; ?>" name="bagbtn" <?php echo ($product_out_of_stock == true) ? 'disabled' : ''; ?>>
-                        <button type="button" class="backbtn" id="button" onclick="history.back()">Head Back</button>
+                        <button type="button" class="backbtn" id="button" onclick="goBack()">Head Back</button>
+                        <script>
+                        function goBack() {
+                        window.location.href = "/neatest/scripts/php/shop/itemcategories/allproducts.php";
+                        }
+                        </script>
                     </form>
                 </div>
                 

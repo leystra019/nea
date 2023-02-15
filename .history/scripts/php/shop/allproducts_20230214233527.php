@@ -29,7 +29,7 @@
                     <a href="/neatest/scripts/php/shop/itemcategories/outerwear.php" class="item-link">Outerwear</a>
                 </li>
                 <li>
-                    <a href="/neatest/scripts/php/shop/itemcategories/sweatshirts.php" class="item-link">Sweatshirts</a>
+                    <a href="/neatest/scripts/php/shop/itemcategories/sweatshirts.php" class="item-link">Sweatshirts g</a>
                 </li>
                 <li>
                     <a href="/neatest/scripts/php/shop/itemcategories/shirts.php" class="item-link">Shirts</a>

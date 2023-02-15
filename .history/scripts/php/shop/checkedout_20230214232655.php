@@ -57,31 +57,31 @@
             <i class="fa-sharp fa-solid fa-bars" id="btn" style="font-size: 31px; color: #FFFFFF;"></i>
             <ul class="sidebar-list" id="sidebar-list">
                 <li>
-                    <a href="/neatest/scripts/php/shop/allproducts.php" class="item-link">All</a>
+                    <a href="/neatest/html/shop/allproducts.php" class="item-link">All</a>
                 </li>
                 <li>
-                    <a href="/neatest/scripts/php/shop/itemcategories/newproducts.php" class="item-link">New Items</a>
+                    <a href="/neatest/html/shop/allproducts.php" class="item-link">New Items</a>
                 </li>
                 <li>
-                    <a href="/neatest/scripts/php/shop/itemcategories/hats.php" class="item-link">Hats</a>
+                    <a href="/neatest/html/shop/allproducts.php" class="item-link">Hats</a>
                 </li>
                 <li>
-                    <a href="/neatest/scripts/php/shop/itemcategories/outerwear.php" class="item-link">Outerwear</a>
+                    <a href="/neatest/html/shop/allproducts.php" class="item-link">Outerwear</a>
                 </li>
                 <li>
-                    <a href="/neatest/scripts/php/shop/itemcategories/sweatshirts.php" class="item-link">Sweatshirts</a>
+                    <a href="/neatest/html/shop/allproducts.php" class="item-link">Sweatshirts</a>
                 </li>
                 <li>
-                    <a href="/neatest/scripts/php/shop/itemcategories/shirts.php" class="item-link">Shirts</a>
+                    <a href="/neatest/html/shop/allproducts.php" class="item-link">Shirts</a>
                 </li>
                 <li>
-                    <a href="/neatest/scripts/php/shop/itemcategories/socks.php" class="item-link">Bottomwear</a>
+                    <a href="/neatest/html/shop/bottomwear.php" class="item-link">Bottomwear</a>
                 </li>
                 <li>
-                    <a href="/neatest/scripts/php/shop/itemcategories/socks.php" class="item-link">Socks</a>
+                    <a href="/neatest/html/shop/allproducts.php" class="item-link">Socks</a>
                 </li>
                 <li>
-                    <a href="/neatest/scripts/php/shop/itemcategories/footwear.php" class="item-link">Footwear</a>
+                    <a href="/neatest/scripts/php/shop/allproducts.php" class="item-link">Footwear</a>
                 </li>
             </ul>
         </nav>
@@ -176,5 +176,5 @@
         </div>
     </div>
     <script src="/neatest/scripts/js/checkout.js"></script>
-    <script src="/neatest/scripts/js/sidebar.js"></script>
+    <script src="/neatest/scro[ts/js/sidebar.js"></script>
 </body>
