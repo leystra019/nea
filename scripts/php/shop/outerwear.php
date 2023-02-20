@@ -20,28 +20,28 @@
                     <a href="/neatest/scripts/php/shop/allproducts.php" class="item-link">All</a>
                 </li>
                 <li>
-                    <a href="/neatest/scripts/php/shop/itemcategories/newproducts.php" class="item-link">New Items</a>
+                    <a href="/neatest/scripts/php/shop/newproducts.php" class="item-link">New Items</a>
                 </li>
                 <li>
-                    <a href="/neatest/scripts/php/shop/itemcategories/hats.php" class="item-link">Hats</a>
+                    <a href="/neatest/scripts/php/shop/hats.php" class="item-link">Hats</a>
                 </li>
                 <li>
-                    <a href="/neatest/scripts/php/shop/itemcategories/outerwear.php" class="item-link">Outerwear</a>
+                    <a href=" " class="item-link">Outerwear</a>
                 </li>
                 <li>
-                    <a href="/neatest/scripts/php/shop/itemcategories/sweatshirts.php" class="item-link">Sweatshirts</a>
+                    <a href="/neatest/scripts/php/shop/sweatshirts.php" class="item-link">Sweatshirts</a>
                 </li>
                 <li>
-                    <a href="/neatest/scripts/php/shop/itemcategories/shirts.php" class="item-link">Shirts</a>
+                    <a href="/neatest/scripts/php/shop/shirts.php" class="item-link">Shirts</a>
                 </li>
                 <li>
-                    <a href=" " class="item-link">Bottomwear</a>
+                    <a href="/neatest/scripts/php/shop/bottomwear.php" class="item-link">Bottomwear</a>
                 </li>
                 <li>
-                    <a href="/neatest/scripts/php/shop/itemcategories/socks.php" class="item-link">Socks</a>
+                    <a href="/neatest/scripts/php/shop/socks.php" class="item-link">Socks</a>
                 </li>
                 <li>
-                    <a href="/neatest/scripts/php/shop/itemcategories/footwear.php" class="item-link">Footwear</a>
+                    <a href="/neatest/scripts/php/shop/footwear.php" class="item-link">Footwear</a>
                 </li>
             </ul>
         </nav>
@@ -56,7 +56,7 @@
             <div class="baglink">
                 <a href="/neatest/scripts/php/shop/bagview.php"class="blue-link">bag</a>
             </div>
-            <h1>Bottomwear</h1>
+            <h1>Outerwear</h1>
             
             <div class="scroller" id="pcontainer">
             <?php
@@ -77,7 +77,7 @@
                     die('Connection failed: ' . $conn->connect_error);
                 } else {
                     // we need to get all products from product_stock table as this is all prod
-                    $query = "SELECT * FROM product_stock WHERE category = 'bottomwear'";
+                    $query = "SELECT * FROM product_stock WHERE category = 'outerwear'";
                     $result = mysqli_query($conn, $query);
 
                     if (mysqli_num_rows($result) > 0) {
