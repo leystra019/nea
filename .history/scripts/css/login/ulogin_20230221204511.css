@@ -121,7 +121,7 @@
   font-weight: bold;
   }
 
-.alert {
+div.alert.alert-warning {
   padding: 20px !important;
   background-color: #f44336 !important;
   color: white !important;

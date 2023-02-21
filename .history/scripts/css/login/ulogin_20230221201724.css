@@ -121,8 +121,8 @@
   font-weight: bold;
   }
 
-.alert {
-  padding: 20px !important;
-  background-color: #f44336 !important;
-  color: white !important;
-}
+  .alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+  }

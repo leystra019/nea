@@ -123,6 +123,6 @@
 
 .alert {
   padding: 20px !important;
-  background-color: #f44336 !important;
-  color: white !important;
+  background-color: #f44336;
+  color: white;
 }

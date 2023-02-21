@@ -1,3 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login_system</title>
+    <link href="/neatest/scripts/css/login/ulogin.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="background">
+        <div class="ln-card">
+            <div class="title">User Login</div>
+            <form method="post">
+                <header>Email</header>
+                <input type="username" name="username" id="username" class="logbox" placeholder="me@email.com" required>
+                <header>Password</header>
+                <input type="password" name="password" class="logbox" id="password" placeholder="••••••••" required>
+                <input type="submit" name="login" id="login" class="submbtn" value = "Login">
+                <a>Don't have an account?</a>
+                <a href="/neatest/scripts/html/login/registration.html" class="blue-link">register</a>
+            </form>
+        </div>
+        <div class="sloglink">
+            <a href="/neatest/scripts/php/login/slogin.php" class="blue-link">staff login</a>
+        </div>
+
+        
+
+    </div>
+</body>
+</html>
+
+
 <?php
     ini_set('display_errors', 1);
     ini_set('display_startup_errors', 1);
@@ -89,36 +123,3 @@
     }
 
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login_system</title>
-    <link href="/neatest/scripts/css/login/ulogin.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-    <div class="background">
-        <div class="ln-card">
-            <div class="title">User Login</div>
-            <form method="post">
-                <header>Email</header>
-                <input type="username" name="username" id="username" class="logbox" placeholder="me@email.com" required>
-                <header>Password</header>
-                <input type="password" name="password" class="logbox" id="password" placeholder="••••••••" required>
-                <input type="submit" name="login" id="login" class="submbtn" value = "Login">
-                <a>Don't have an account?</a>
-                <a href="/neatest/scripts/html/login/registration.html" class="blue-link">register</a>
-            </form>
-        </div>
-        <div class="sloglink">
-            <a href="/neatest/scripts/php/login/slogin.php" class="blue-link">staff login</a>
-        </div>
-
-        
-
-    </div>
-</body>
-</html>

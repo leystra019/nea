@@ -35,12 +35,10 @@
             $stmt->fetch();
             // set password variable to the user's input on the login form
             $password = $_POST['password'];
-            if ($hashed_password === null) {
-                // handle the case where the hashed password is null (e.g., no matching user in database)
-                echo '<div class="alert alert-warning">Sorry a user with these details cannot be found</div>';
-            }
+
+
             // Verify that the user-provided password matches the stored hash
-            else if (password_verify($password, $hashed_password)) {
+            if (password_verify($password, $hashed_password)) {
                 // this is if the password has been succesful
                 // the sql statement is going to find the logged in user's id from table users
                 $sql = "SELECT id, name FROM users WHERE username = ?";
@@ -75,8 +73,8 @@
             // If the user has not provided the same password as the one on the form
             // echo so they know they haven't put the right password
             else {
-                 // handle the case where the hashed password is null (e.g., no matching user in database)
-                echo '<div class="alert alert-warning">1 of your details is incorrect</div>';
+                echo 'Invalid password.';
+                echo "<script>alert('invalid')</script>";
             }
 
             if(isset($_POST["logout"])){
@@ -105,9 +103,9 @@
             <div class="title">User Login</div>
             <form method="post">
                 <header>Email</header>
-                <input type="username" name="username" id="username" class="logbox" placeholder="me@email.com" required>
+                <input type="username" name="username" id="username" class="logbox" placeholder="me@email.com">
                 <header>Password</header>
-                <input type="password" name="password" class="logbox" id="password" placeholder="••••••••" required>
+                <input type="password" name="password" class="logbox" id="password" placeholder="••••••••">
                 <input type="submit" name="login" id="login" class="submbtn" value = "Login">
                 <a>Don't have an account?</a>
                 <a href="/neatest/scripts/html/login/registration.html" class="blue-link">register</a>

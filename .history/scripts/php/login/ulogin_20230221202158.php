@@ -35,12 +35,12 @@
             $stmt->fetch();
             // set password variable to the user's input on the login form
             $password = $_POST['password'];
-            if ($hashed_password === null) {
-                // handle the case where the hashed password is null (e.g., no matching user in database)
-                echo '<div class="alert alert-warning">Sorry a user with these details cannot be found</div>';
+            if (!$hashed_password) {
+                echo "User details do not exist";
+                exit;
             }
             // Verify that the user-provided password matches the stored hash
-            else if (password_verify($password, $hashed_password)) {
+            if (password_verify($password, $hashed_password)) {
                 // this is if the password has been succesful
                 // the sql statement is going to find the logged in user's id from table users
                 $sql = "SELECT id, name FROM users WHERE username = ?";
@@ -75,8 +75,8 @@
             // If the user has not provided the same password as the one on the form
             // echo so they know they haven't put the right password
             else {
-                 // handle the case where the hashed password is null (e.g., no matching user in database)
-                echo '<div class="alert alert-warning">1 of your details is incorrect</div>';
+                echo 'Invalid password.';
+                echo "<script>alert('invalid')</script>";
             }
 
             if(isset($_POST["logout"])){
