@@ -86,10 +86,9 @@
                                 }
                             ?>
                             </tbody>
-                           <!-- This is the modal that appears when the staff member wants to mange a customers order -->
                             <div class="product-modal">
                                 <div class="modal-content">
-                                    <!-- We are calling another script when the form is submitted in order for the customer's order to update -->
+
                                     <form action="/neatest/scripts/php/staff/buttons/editorder.php" method="post">
                                         <input type="text" placeholder="order_id(s)" name="order_id" readonly>
                                         <input type="text" placeholder="email" name="username" readonly>
@@ -99,9 +98,19 @@
                                         <input type="text" placeholder="status" name="status">
                                         <input type="submit"  placeholder="confirm changes">
                                     </form>
-                                    <!-- a close button needs to appear if the staff member has misclicked and does not want to update a specific order-->
                                     <div class="close">+</div>
 
+                                </div>
+                                <div class="customer-modal" hidden>
+                                    <form action="/neatest/scripts/php/staff/changeorder.php" method="post">
+                                        <input type="text" placeholder="order_id" name="order_id">
+                                        <input type="text" placeholder="username" name="email">
+                                        <input type="text" placeholder="address_line_1" name="product_id">
+                                        <input type="text" placeholder="address_line_2" name="quantity">
+                                        <input type="text" placeholder="postcode" name="postcode">
+                                        <input type="submit"  placeholder="confirm changes">
+                                    </form>
+                                    <div class="close">+</div>
                                 </div>
                             </div>
                     </table>

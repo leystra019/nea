@@ -3,9 +3,11 @@
     ini_set('display_startup_errors', 1);
     error_reporting(E_ALL);
     session_start();
-
+    // Connect to the database
     $conn = mysqli_connect('localhost', 'root', '', 'neatest');
+    // check if the connection works
     if ($conn->connect_error) {
+        //if the connection doesn't work report error
       die('Connection failed: ' . $conn->connect_error);
     }
 
@@ -37,7 +39,6 @@
                 <div class="card">
                     <div style="z-index: 1;" class="taskbarcontainer">
                         <h1>Tasks</h1>
-                        <!-- we need to create a function that searches for orders -->
                         <input type="text" id ="tasksrch" onkeyup="myFunction()" placeholder="Search for order(s)...">
                     </div>
                     <div class="right-sideb">
@@ -69,7 +70,6 @@
                                 LEFT JOIN product_stock ON orders.product_id = product_stock.product_id 
                                 ";
                                 $result = mysqli_query($conn, $query);
-                                // If the connection and query has been succesful we want to publish the data to our table
                                 if ($result) {
                                     while ($row = mysqli_fetch_array($result)) {
                                         echo "<tr class='orders_table'>";
@@ -86,10 +86,9 @@
                                 }
                             ?>
                             </tbody>
-                           <!-- This is the modal that appears when the staff member wants to mange a customers order -->
                             <div class="product-modal">
                                 <div class="modal-content">
-                                    <!-- We are calling another script when the form is submitted in order for the customer's order to update -->
+
                                     <form action="/neatest/scripts/php/staff/buttons/editorder.php" method="post">
                                         <input type="text" placeholder="order_id(s)" name="order_id" readonly>
                                         <input type="text" placeholder="email" name="username" readonly>
@@ -99,9 +98,19 @@
                                         <input type="text" placeholder="status" name="status">
                                         <input type="submit"  placeholder="confirm changes">
                                     </form>
-                                    <!-- a close button needs to appear if the staff member has misclicked and does not want to update a specific order-->
                                     <div class="close">+</div>
 
+                                </div>
+                                <div class="customer-modal" hidden>
+                                    <form action="/neatest/scripts/php/staff/changeorder.php" method="post">
+                                        <input type="text" placeholder="order_id" name="order_id">
+                                        <input type="text" placeholder="username" name="email">
+                                        <input type="text" placeholder="address_line_1" name="product_id">
+                                        <input type="text" placeholder="address_line_2" name="quantity">
+                                        <input type="text" placeholder="postcode" name="postcode">
+                                        <input type="submit"  placeholder="confirm changes">
+                                    </form>
+                                    <div class="close">+</div>
                                 </div>
                             </div>
                     </table>

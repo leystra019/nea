@@ -17,8 +17,7 @@
         $order_id = $_POST['order_id'];
         $product_id = $_POST['product_id'];
       
-        // This is where we perform the deletion query using both values of order_id and product_id
-        // To avoid sql injection we need to bind the parameters
+        // And we need to erform the deletion query using both values of order_id and product_id
         $query = "DELETE FROM orders WHERE order_id = ? AND product_id = ?";
         $stmt = mysqli_prepare($conn, $query);
         mysqli_stmt_bind_param($stmt, "ii", $order_id, $product_id);

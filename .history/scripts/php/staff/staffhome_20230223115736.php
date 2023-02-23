@@ -3,15 +3,16 @@
     ini_set('display_startup_errors', 1);
     error_reporting(E_ALL);
     session_start();
-    
+
+    // Connect to the database and retrieve the product data
     $conn = mysqli_connect('localhost', 'root', '', 'neatest');
     if ($conn->connect_error) {
     die('Connection failed: ' . $conn->connect_error);
     }
 
-    // check it is a staff that has logged on
-    if ($_SESSION['session_auth'] == 0 || $_SESSION['session_auth'] == 2) {
-        // if it is a regular user or the staff hasn't logged on we need to send the user to staff login
+    // check user has logged in
+    if ($_SESSION['session_auth'] == 0 || $_SESSION['session_auth'] == 1) {
+        // if the user hasn't logged in already, send them back to the login page
         header('location: /neatest/scripts/php/login/slogin.php');
     }    
 

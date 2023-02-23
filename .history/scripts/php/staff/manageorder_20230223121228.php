@@ -99,7 +99,6 @@
                                         <input type="text" placeholder="status" name="status">
                                         <input type="submit"  placeholder="confirm changes">
                                     </form>
-                                    <!-- a close button needs to appear if the staff member has misclicked and does not want to update a specific order-->
                                     <div class="close">+</div>
 
                                 </div>
