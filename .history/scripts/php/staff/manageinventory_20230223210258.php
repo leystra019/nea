@@ -98,7 +98,6 @@
                                         echo  "<td>" . $row['subcategory'] . "</td>";
                                         echo  "<td>" . $row['price'] . "</td>";
                                         echo  "<td>" . $row['stock_level'] . "</td>";
-                                        // we need the action buttons to have slightly different names and fields to the orders action buttons, ie. we don't need a status button
                                         echo "<td> <button class='button' id='edit_product_button' data-product-id='" . $row['product_id'] . "' data-title='" . $row['title'] . "' data-brand='" . $row['brand'] . "' data-description='" . $row['description'] . "' data-category='" . $row['category'] . "' data-subcategory='" . $row['subcategory'] . "' data-price='" . $row['price'] . "' data-stock='" . $row['stock_level'] . "'>Edit</button> <button class='button'  id='delete_product_button'>Delete</button></td>";
                                         echo "</tr>";
                                     }

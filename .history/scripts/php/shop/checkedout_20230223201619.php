@@ -126,18 +126,13 @@
                         </tr>
                         <tbody>
                             <?php
-                                // we need to decode what is in the checkedout_bag so it can be read_
                                 $current_bag = json_decode($_COOKIE['checkedout_bag'], true);
-                                // we need to create an array of the product ids that have been added to the bag
                                 $current_bag_keys = array_keys($current_bag);
-                                // If the array is empty we need to set -1 in order to avoid syntax issues
                                 if(empty($current_bag_keys)) {
                                     $current_bag_keys[] = -1;
                                 }
-                                // This sql statement will get us more information of a product from by using a where clause and we use thePHP implode() function to convert the $current_bag_keys array into a comma-separated string
                                 $sql = "SELECT * FROM product_stock WHERE product_id in (" . implode(',', $current_bag_keys) . ")";
                                 if ($conn) {
-                                    // Before we run the code we need to set grand total otherwise the code won't work
                                     $grand_total = 0;
                                     $result = mysqli_query($conn, $sql);
                                     if ($result) {
@@ -178,7 +173,6 @@
             </div>
         </div>
     </div>
-    <!-- These are the scripts we are using -->
     <script src="/neatest/scripts/js/checkout.js"></script>
     <script src="/neatest/scripts/js/sidebar.js"></script>
 </body>

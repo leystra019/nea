@@ -193,7 +193,6 @@
                       $result = mysqli_stmt_get_result($stmt);
                       if(mysqli_num_rows($result) > 0){
                         while($row = mysqli_fetch_assoc($result)){
-                          // We need to create variables of the rows in the table to use later
                           $name = $row['name'];
                           $email = $row['username'];
                           $phone = $row['phone'];

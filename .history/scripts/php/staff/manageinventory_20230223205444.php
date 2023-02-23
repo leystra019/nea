@@ -95,11 +95,8 @@
                                         echo "<td>" . $row['brand'] . "</td>";
                                         echo "<td>" . $row['description'] . "</td>";
                                         echo  "<td>" . $row['category'] . "</td>";
-                                        echo  "<td>" . $row['subcategory'] . "</td>";
-                                        echo  "<td>" . $row['price'] . "</td>";
-                                        echo  "<td>" . $row['stock_level'] . "</td>";
-                                        // we need the action buttons to have slightly different names and fields to the orders action buttons, ie. we don't need a status button
-                                        echo "<td> <button class='button' id='edit_product_button' data-product-id='" . $row['product_id'] . "' data-title='" . $row['title'] . "' data-brand='" . $row['brand'] . "' data-description='" . $row['description'] . "' data-category='" . $row['category'] . "' data-subcategory='" . $row['subcategory'] . "' data-price='" . $row['price'] . "' data-stock='" . $row['stock_level'] . "'>Edit</button> <button class='button'  id='delete_product_button'>Delete</button></td>";
+                                        echo "<td>" . $row['status'] . "</td>";
+                                        echo "<td> <button class='button' id='edit_order_button' data-order-id='" . $row['order_id'] . "' data-product-id='" . $row['product_id'] . "' data-quantity='" . $row['quantity'] . "' data-price='" . $row['price'] . "' data-status='" . $row['status'] . "'>Edit</button> <button class='button'  id='change_order_status'>Update status</button>  <button class='button'  id='delete_order_button'>Delete</button></td>";
                                         echo "</tr>";
                                     }
                                 }
@@ -129,7 +126,6 @@
 
                 </div>
             </div>
-            <!-- This script runs all the form submissions/ button clicks -->
             <script src="/neatest/scripts/js/order.js"></script>
         
                 

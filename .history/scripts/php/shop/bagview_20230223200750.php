@@ -16,7 +16,7 @@
         header('location: /neatest/scripts/php/login/ulogin.php');
     }
 
-    else {
+    else{
         // if logged in with bag
         if (isset($_COOKIE['bag'])) {
             //get the contents of the bag
@@ -40,7 +40,7 @@
                     $checkout_disabled = true;
                 }
             }
-        else {
+        } else {
             echo '<div class="alert alert-warning">Your bag is empty. Please add some items in order to proceed to checkout.</div>';
             $checkout_disabled = true;
         }
@@ -69,8 +69,7 @@
         if(isset($_GET['update'])){
             header("Refresh:0"); 
 
-        }
-    } 
+        } 
         
         
 

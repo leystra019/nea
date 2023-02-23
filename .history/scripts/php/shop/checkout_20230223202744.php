@@ -48,14 +48,11 @@
     mysqli_stmt_bind_param($stmt, "ssssssssi", $name, $email, $phone, $residence, $billingad, $shippingad, $city, $postcode, $user_id);
 
     if (mysqli_stmt_execute($stmt)) {
-      // we need to set variable names to gather details on what the user has checked out
       $bag = json_decode($_COOKIE['bag'], true);
-      // Here we use the mt_rand function to create a random order number that will be assigned to the products the user checkouts and go into the table orders
       $order_id = mt_rand();
       $status = 1;
       $product_ids = array_keys($bag);
       $total_quantity = array_sum($bag);
-      // This created at date is in the same form as what is in out table
       $created_at = date("Y-m-d H:i:s");
     
       // insert each product in the order
@@ -71,22 +68,19 @@
         // we need to close the statement returned by the previous query before executing the update
         mysqli_stmt_close($get_price_stmt);
 
-        // Further details of a product will be inserted into the orders table
         $sql = "INSERT INTO orders (order_id, product_id, created_at, quantity, price, status) VALUES (?, ?, ?, ?, ?, ?)";
         $stmt = mysqli_prepare($conn, $sql);
         $product_quantity = $bag[$product_id];
-        // We bind parameters to avoid sql injection
         mysqli_stmt_bind_param($stmt, "iisddi", $order_id, $product_id, $created_at, $product_quantity, $price, $status);
         mysqli_stmt_execute($stmt);
 
         // update the product stock quantity
         $sql = "UPDATE product_stock SET stock_level = stock_level - ? WHERE product_id = ?";
         $stmt = mysqli_prepare($conn, $sql);
-        // We bind parameters to avoid sql injection
         mysqli_stmt_bind_param($stmt, "ii", $product_quantity, $product_id);
         mysqli_stmt_execute($stmt);
       }
-      // This is where we are adding the order to the customer order table
+      // adding the order to the customer order table
       $sql = "INSERT INTO customer_order (order_id, user_id) VALUES (?, ?)";
       $stmt = mysqli_prepare($conn, $sql);
       mysqli_stmt_bind_param($stmt, "ii", $order_id, $user_id);
@@ -100,7 +94,6 @@
       setcookie("bag", "", time() - 3600);
       header('location: /neatest/scripts/php/shop/checkedout.php');
     } else {
-      // otherwise we display an alert
       echo "<script>alert('Sorry. But you have been un-able to checkout this time');</script>";
     }
     
@@ -156,7 +149,6 @@
       </nav>
     <div class="bg">
       <div class="loginlink">
-        <!-- This is the button that we use for the user to logout -->
         <a href="/neatest/scripts/php/login/ulogin.php" onclick="remove_cookie()" class="blue-link">logout</a>
       </div>
       <div class="baglink">
@@ -183,7 +175,7 @@
                         }
                       }
                     }
-                    // This is where we are going to gather more detail on the user
+                    // THis is where we are going to gather more detail on the user
                     // Binding parameters prevents sql injection
                     $query = "SELECT name, username, phone, address_line_1, address_line_2, city, postcode, country FROM users WHERE id = ?";
 
@@ -193,7 +185,6 @@
                       $result = mysqli_stmt_get_result($stmt);
                       if(mysqli_num_rows($result) > 0){
                         while($row = mysqli_fetch_assoc($result)){
-                          // We need to create variables of the rows in the table to use later
                           $name = $row['name'];
                           $email = $row['username'];
                           $phone = $row['phone'];

@@ -69,37 +69,30 @@
                         <table id="orders_table" style= "border-collapse: collapse" align="center" border= "1" width="80%">
                             <thead style="justify-items: centre">
                                 <tr>
-                                    <th>ID</th>
-                                    <th>Product title</th>
-                                    <th>Brand</th>
-                                    <th>Description</th>
-                                    <th>Category</th>
-                                    <th>Subcategory</th>
-                                    <th>Price</th>
-                                    <th>Stock</th>
-                                    <th>Actions</th>
+                                    <th>Order ID</th>
+                                    <th>Product ID</th>
+                                    <th>Quantity</th>
+                                    <th>price</th>
+                                    <th>status</th>
+                                    <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody style="width: 80%;">
 
                             <?php
                                 // Retrieve the product data from the database
-                                $query = "SELECT title, brand, description, category, subcategory, price, stock_level FROM product_stock";
+                                $query = "SELECT title, brand, description, category, subcategory, price FROM product_stock";
                                 $result = mysqli_query($conn, $query);
-                                // We want to display the product data fetched into our table
+                                // We want to display the product data fetched in our table
                                 if ($result) {
                                     while ($row = mysqli_fetch_array($result)) {
                                         echo "<tr class='orders_table'>";
+                                        echo "<td>" . $row['order_id'] . "</td>";
                                         echo "<td>" . $row['product_id'] . "</td>";
-                                        echo "<td>" . $row['title'] . "</td>";
-                                        echo "<td>" . $row['brand'] . "</td>";
-                                        echo "<td>" . $row['description'] . "</td>";
-                                        echo  "<td>" . $row['category'] . "</td>";
-                                        echo  "<td>" . $row['subcategory'] . "</td>";
+                                        echo "<td>" . $row['quantity'] . "</td>";
                                         echo  "<td>" . $row['price'] . "</td>";
-                                        echo  "<td>" . $row['stock_level'] . "</td>";
-                                        // we need the action buttons to have slightly different names and fields to the orders action buttons, ie. we don't need a status button
-                                        echo "<td> <button class='button' id='edit_product_button' data-product-id='" . $row['product_id'] . "' data-title='" . $row['title'] . "' data-brand='" . $row['brand'] . "' data-description='" . $row['description'] . "' data-category='" . $row['category'] . "' data-subcategory='" . $row['subcategory'] . "' data-price='" . $row['price'] . "' data-stock='" . $row['stock_level'] . "'>Edit</button> <button class='button'  id='delete_product_button'>Delete</button></td>";
+                                        echo "<td>" . $row['status'] . "</td>";
+                                        echo "<td> <button class='button' id='edit_order_button' data-order-id='" . $row['order_id'] . "' data-product-id='" . $row['product_id'] . "' data-quantity='" . $row['quantity'] . "' data-price='" . $row['price'] . "' data-status='" . $row['status'] . "'>Edit</button> <button class='button'  id='change_order_status'>Update status</button>  <button class='button'  id='delete_order_button'>Delete</button></td>";
                                         echo "</tr>";
                                     }
                                 }
@@ -109,15 +102,13 @@
                             <div class="product-modal">
                                 <div class="modal-content">
                                     <!-- We are calling another script when the form is submitted in order for the inventory to update -->
-                                    <form action="/neatest/scripts/php/staff/buttons/editinventory.php" method="post">
+                                    <form action="/neatest/scripts/php/staff/buttons/editorder.php" method="post">
                                         <!-- We want data from these fields to update-->
-                                        <input type="text" placeholder="Title of Product" name="title" readonly>
-                                        <input type="text" placeholder="product_id" name="brand">
-                                        <input type="text" placeholder="Description..." name="description">
-                                        <input type="text" placeholder="Category" name="Category">
-                                        <input type="text" placeholder="Subcategory" name="su">
-                                        <input type="text" placeholder="Price" name="price">
-                                        <input type="text" placeholder="Stock level" name="stock">
+                                        <input type="text" placeholder="order_id(s)" name="order_id" readonly>
+                                        <input type="text" placeholder="product_id" name="product_id">
+                                        <input type="text" placeholder="quantity" name="quantity">
+                                        <input type="text" placeholder="price" name="price">
+                                        <input type="text" placeholder="status" name="status">
                                         <input type="submit"  placeholder="confirm changes">
                                     </form>
                                     <!-- A close button needs to appear if the staff member has misclicked and does not want to update a specific product's inventory-->
@@ -129,7 +120,6 @@
 
                 </div>
             </div>
-            <!-- This script runs all the form submissions/ button clicks -->
             <script src="/neatest/scripts/js/order.js"></script>
         
                 

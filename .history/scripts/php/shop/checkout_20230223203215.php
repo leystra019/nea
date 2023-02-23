@@ -156,7 +156,6 @@
       </nav>
     <div class="bg">
       <div class="loginlink">
-        <!-- This is the button that we use for the user to logout -->
         <a href="/neatest/scripts/php/login/ulogin.php" onclick="remove_cookie()" class="blue-link">logout</a>
       </div>
       <div class="baglink">
@@ -193,7 +192,6 @@
                       $result = mysqli_stmt_get_result($stmt);
                       if(mysqli_num_rows($result) > 0){
                         while($row = mysqli_fetch_assoc($result)){
-                          // We need to create variables of the rows in the table to use later
                           $name = $row['name'];
                           $email = $row['username'];
                           $phone = $row['phone'];

@@ -40,7 +40,7 @@
                     $checkout_disabled = true;
                 }
             }
-        else {
+         else {
             echo '<div class="alert alert-warning">Your bag is empty. Please add some items in order to proceed to checkout.</div>';
             $checkout_disabled = true;
         }
