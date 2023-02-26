@@ -194,7 +194,8 @@ thead {
 }
 
 .highlight {
-	background-color: rgba(47, 156, 195, 1) !important;
+	background-color: blue;
+	color: white;
   }
   
   

@@ -40,6 +40,9 @@
                         <!-- we need to create a function that searches for orders -->
                         <input type="text" id ="tasksrch" onkeyup="searchorderFunction()" placeholder="Search for order(s)...">
                     </div>
+                    <div class="right-sideb">
+                        <a href="#" id="cbutton" class="button">Click Me</a>
+                    </div>
                     <div class="orders_table" >
                         <table id="orders_table" width="95%">
                             <thead style="justify-items: centre">

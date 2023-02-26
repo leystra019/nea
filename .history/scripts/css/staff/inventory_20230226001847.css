@@ -1,0 +1,33 @@
+#inventory_table {
+    margin-top: 38px;
+    margin-left: 19px;
+    border-collapse: collapse;
+    width: 95%;
+    height: 580px;
+    overflow: auto;
+}
+
+#inventory_table tbody {
+    height: 300px;
+    overflow-y: auto;
+}
+
+tr.tableprod {
+    text-align: center;
+    background-color: white;
+    padding: 10px 10px !important;
+}
+
+.tablehead_box {
+    background: #11101D;
+}
+
+
+thead {
+	color: #646577;
+	font-size: 30px;
+	position: sticky;
+  	top: 0;
+}
+
+

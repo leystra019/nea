@@ -22,7 +22,6 @@
     <title>Orders</title>
     <link rel="stylesheet" href="/neatest/scripts/css/main.css">
     <link rel="stylesheet" href="/neatest/scripts/css/staff/order.css">
-    <link rel="stylesheet" href="/neatest/scripts/css/staff/inventory.css">
 </head>
 <body>
     <div class="container">
@@ -60,10 +59,10 @@
                             <h2>Cost</h2>
                         </div>
                     </div>
-                    <div id="inventory_table">
+                    <div id="scroller">
                         <table class="inventory_table" style= "border-collapse: collapse" align="center" width="95%" >
                             <thead style="justify-items: centre">
-                                <tr class="tablehead_box"> 
+                                <tr>
                                     <th>ID</th>
                                     <th>Product title</th>
                                     <th>Brand</th>

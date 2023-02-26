@@ -22,7 +22,6 @@
     <title>Orders</title>
     <link rel="stylesheet" href="/neatest/scripts/css/main.css">
     <link rel="stylesheet" href="/neatest/scripts/css/staff/order.css">
-    <link rel="stylesheet" href="/neatest/scripts/css/staff/inventory.css">
 </head>
 <body>
     <div class="container">
@@ -54,16 +53,22 @@
                             <h2>Product type</h2>
                         </div>
                         <div class="reordlvl">
-                            <h2>Stock</h2>
+                            <h2>Reorder level</h2>
                         </div>
                         <div class="cost">
                             <h2>Cost</h2>
                         </div>
+                        <div class="status">
+                            <h2>Status</h2>
+                        </div>
                     </div>
-                    <div id="inventory_table">
-                        <table class="inventory_table" style= "border-collapse: collapse" align="center" width="95%" >
+                    <div class="right-sideb">
+                        <a href="#" id="cbutton" class="button">Click Me</a>
+                    </div>
+                    <div class="orders_table" >
+                        <table id="orders_table" style= "border-collapse: collapse" align="center" border= "1" width="80%">
                             <thead style="justify-items: centre">
-                                <tr class="tablehead_box"> 
+                                <tr>
                                     <th>ID</th>
                                     <th>Product title</th>
                                     <th>Brand</th>
@@ -75,7 +80,7 @@
                                     <th>Actions</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody style="width: 80%;">
 
                             <?php
                                 // Retrieve the product data from the database
@@ -84,7 +89,7 @@
                                 // We want to display the product data fetched into our table
                                 if ($result) {
                                     while ($row = mysqli_fetch_array($result)) {
-                                        echo "<tr class='tableprod'>";
+                                        echo "<tr class='orders_table'>";
                                         echo "<td>" . $row['product_id'] . "</td>";
                                         echo "<td>" . $row['title'] . "</td>";
                                         echo "<td>" . $row['brand'] . "</td>";
@@ -106,12 +111,11 @@
                                     <!-- We are calling another script when the form is submitted in order for the inventory to update -->
                                     <form action="/neatest/scripts/php/staff/buttons/editinventory.php" method="post">
                                         <!-- We want data from these fields to update-->
-                                        <input type="text" placeholder="product_id" name="product_id" readonly>
-                                        <input type="text" placeholder="Title of Product" name="title">
+                                        <input type="text" placeholder="Title of Product" name="title" readonly>
                                         <input type="text" placeholder="product_id" name="brand">
                                         <input type="text" placeholder="Description..." name="description">
-                                        <input type="text" placeholder="Category" name="category">
-                                        <input type="text" placeholder="Subcategory" name="subcategory">
+                                        <input type="text" placeholder="Category" name="Category">
+                                        <input type="text" placeholder="Subcategory" name="su">
                                         <input type="text" placeholder="Price" name="price">
                                         <input type="text" placeholder="Stock level" name="stock">
                                         <input type="submit"  placeholder="confirm changes">

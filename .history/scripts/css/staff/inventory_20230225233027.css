@@ -1,0 +1,36 @@
+.table-container {
+    width: 95%;
+    margin: 0 auto;
+    height: 300px; /* set the height of the table container */
+    overflow: auto; /* enable the overflow for the container */
+}
+
+.inventory-table {
+border-collapse: collapse;
+width: 100%;
+}
+
+.inventory-table thead th {
+position: sticky;
+top: 0px;
+background-color: #f2f2f2;
+}
+
+.inventory-table td,
+.inventory-table th {
+border: 1px solid #ddd;
+padding: 8px;
+}
+
+.inventory-table tr:nth-child(even) {
+background-color: #f2f2f2;
+}
+
+.inventory-table tr:hover {
+background-color: #ddd;
+}
+
+.inventory-table-body {
+display: block; /* make the table body display as a block to enable scrolling */
+overflow-y: auto;
+}

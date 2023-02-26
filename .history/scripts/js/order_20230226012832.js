@@ -160,7 +160,7 @@ for (var i = 0; i < rows.length; i++) {
       // Add the highlight class to the clicked row
       this.classList.add("highlight");
     });
-}
+  }
   
 
   

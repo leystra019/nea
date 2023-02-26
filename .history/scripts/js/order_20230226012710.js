@@ -159,6 +159,11 @@ for (var i = 0; i < rows.length; i++) {
       }
       // Add the highlight class to the clicked row
       this.classList.add("highlight");
+  
+      // Add an overlay to the clicked row
+      var overlay = document.createElement("div");
+      overlay.className = "overlay";
+      this.appendChild(overlay);
     });
 }
   

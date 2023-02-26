@@ -120,13 +120,12 @@ function searchorderFunction() {
     for (var i = 0; i < rows.length; i++) {
       var order_id = rows[i].getElementsByTagName("td")[0];
       if (order_id) {
-        var order_id_str = order_id.innerHTML.toUpperCase();
-        if (order_id_str.startsWith(filter)) {
+        var order_id_text = order_id.textContent || order_id.innerText;
+        if (order_id_text.length === filter.length && order_id_text.startsWith(filter)) {
             rows[i].style.display = "";
-            // We need to set found to true when a match is found
             found = true;
         } else {
-          rows[i].style.display = "none";
+            rows[i].style.display = "none";
         }
       }
     }
@@ -145,23 +144,6 @@ function searchorderFunction() {
         message.style.display = "none"; 
     }
 }
-
-// This is for highlighting the rows/ telling the staff member what rows they have selected
-// Get all the rows in the table
-var rows = document.getElementsByTagName("tr");
-
-// Loop through the rows and add a click event listener to each one
-for (var i = 0; i < rows.length; i++) {
-    rows[i].addEventListener("click", function() {
-      // Remove the highlight class from all rows
-      for (var j = 0; j < rows.length; j++) {
-        rows[j].classList.remove("highlight");
-      }
-      // Add the highlight class to the clicked row
-      this.classList.add("highlight");
-    });
-}
-  
 
   
 

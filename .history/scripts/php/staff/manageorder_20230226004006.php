@@ -36,9 +36,12 @@
             <main>
                 <div class="card">
                     <div style="z-index: 1;" class="taskbarcontainer">
-                        <h1>Orders</h1>
+                        <h1>Tasks</h1>
                         <!-- we need to create a function that searches for orders -->
                         <input type="text" id ="tasksrch" onkeyup="searchorderFunction()" placeholder="Search for order(s)...">
+                    </div>
+                    <div class="right-sideb">
+                        <a href="#" id="cbutton" class="button">Click Me</a>
                     </div>
                     <div class="orders_table" >
                         <table id="orders_table" width="95%">
@@ -53,7 +56,6 @@
                                     <th>Action</th>
                                 </tr>
                             </thead>
-                            <div id="no-order-matches-message" style="display: none; margin-left: 20px; margin-top: 10px; color: red;">Sorry. No Order matches what you have searched for.</div>
                             <tbody>
 
                             <?php
@@ -83,6 +85,7 @@
                                     }
                                 }
                             ?>
+                            <div id="no-records-message" style="display: none;">No records found.</div>
                             </tbody>
                            <!-- This is the modal that appears when the staff member wants to mange a customers order -->
                             <div class="product-modal">

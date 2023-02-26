@@ -120,11 +120,8 @@ function searchorderFunction() {
     for (var i = 0; i < rows.length; i++) {
       var order_id = rows[i].getElementsByTagName("td")[0];
       if (order_id) {
-        var order_id_str = order_id.innerHTML.toUpperCase();
-        if (order_id_str.startsWith(filter)) {
-            rows[i].style.display = "";
-            // We need to set found to true when a match is found
-            found = true;
+        if (order_id.innerHTML.toUpperCase().indexOf(filter) > -1) {
+          rows[i].style.display = "";
         } else {
           rows[i].style.display = "none";
         }
@@ -132,36 +129,11 @@ function searchorderFunction() {
     }
     // Show a message if no matching rows are found
     var message = document.getElementById("no-order-matches-message");
-
-    // If no matches are found we need to display a message
-    if (!found) {
+    if (!found && filter !== "") {
         message.style.display = "";
     } else {
         message.style.display = "none";
     }
-    
-    // Also if the search input is cleared, we need to hide the message
-    if (filter.length === 0) {
-        message.style.display = "none"; 
-    }
 }
-
-// This is for highlighting the rows/ telling the staff member what rows they have selected
-// Get all the rows in the table
-var rows = document.getElementsByTagName("tr");
-
-// Loop through the rows and add a click event listener to each one
-for (var i = 0; i < rows.length; i++) {
-    rows[i].addEventListener("click", function() {
-      // Remove the highlight class from all rows
-      for (var j = 0; j < rows.length; j++) {
-        rows[j].classList.remove("highlight");
-      }
-      // Add the highlight class to the clicked row
-      this.classList.add("highlight");
-    });
-}
-  
-
   
 

@@ -60,10 +60,10 @@
                             <h2>Cost</h2>
                         </div>
                     </div>
-                    <div id="inventory_table">
-                        <table class="inventory_table" style= "border-collapse: collapse" align="center" width="95%" >
+                    <div class="inventory_table">
+                        <table id="inventory_table" style= "border-collapse: collapse" align="center" width="95%" height="100%">
                             <thead style="justify-items: centre">
-                                <tr class="tablehead_box"> 
+                                <tr>
                                     <th>ID</th>
                                     <th>Product title</th>
                                     <th>Brand</th>
@@ -84,7 +84,7 @@
                                 // We want to display the product data fetched into our table
                                 if ($result) {
                                     while ($row = mysqli_fetch_array($result)) {
-                                        echo "<tr class='tableprod'>";
+                                        echo "<tr class='inventory_table'>";
                                         echo "<td>" . $row['product_id'] . "</td>";
                                         echo "<td>" . $row['title'] . "</td>";
                                         echo "<td>" . $row['brand'] . "</td>";

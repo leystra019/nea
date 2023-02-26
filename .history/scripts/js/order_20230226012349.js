@@ -152,16 +152,15 @@ var rows = document.getElementsByTagName("tr");
 
 // Loop through the rows and add a click event listener to each one
 for (var i = 0; i < rows.length; i++) {
-    rows[i].addEventListener("click", function() {
-      // Remove the highlight class from all rows
-      for (var j = 0; j < rows.length; j++) {
-        rows[j].classList.remove("highlight");
-      }
-      // Add the highlight class to the clicked row
-      this.classList.add("highlight");
-    });
+  rows[i].addEventListener("click", function() {
+    // Remove the highlight class from all rows
+    for (var j = 0; j < rows.length; j++) {
+      rows[j].classList.remove("highlight");
+    }
+    // Add the highlight class to the clicked row
+    this.classList.add("highlight");
+  });
 }
-  
 
   
 

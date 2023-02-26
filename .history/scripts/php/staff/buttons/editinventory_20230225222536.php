@@ -24,17 +24,16 @@
         $subcategory = $_POST['subcategory'];
         $price = $_POST['price'];
         $stock = $_POST['stock'];
-        
+
         // This is where we are updating the details of an product, but we have left the users email out of it because it is read only/not editable
         // To avoid sql injection we need to bind the parameters
-        $query = "UPDATE product_stock SET title = ?, brand = ?, description = ?, category = ?, subcategory = ?, price = ?, stock_level = ? WHERE product_id = ?";
+        $query = "UPDATE product_stock SET title = ?, brand = ?, description = ?, category = ?, subcategory = ?, price = ? and stock_level = ? WHERE product_id = ?";
         $stmt = mysqli_prepare($conn, $query);
-        mysqli_stmt_bind_param($stmt, "ssssssdi", $title, $brand, $description, $category, $subcategory, $price, $stock, $id);
-        mysqli_stmt_execute($stmt);
+        mysqli_stmt_bind_param($stmt, "sssssdi", $id, $title, $brand, $description, $category, $subcategory, $price, $stock);
+        mysqli_stmt_execute($stmt);        
 
-
-        // Once this is done we want to redirect the user back to the edit order page (their previous location)
-        header('Location: /neatest/scripts/php/staff/Manageinventory.php');
+        // Once this is done we want to redirect the user to the manage order page (their previous location)
+        header('Location: /neatest/scripts/php/staff/manageorder.php');
         exit;
     }
 ?>

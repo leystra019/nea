@@ -61,6 +61,7 @@
                         </div>
                     </div>
                     <div id="inventory_table">
+                        <div class="table_container">
                         <table class="inventory_table" style= "border-collapse: collapse" align="center" width="95%" >
                             <thead style="justify-items: centre">
                                 <tr class="tablehead_box"> 

@@ -63,7 +63,7 @@
                     <div id="inventory_table">
                         <table class="inventory_table" style= "border-collapse: collapse" align="center" width="95%" >
                             <thead style="justify-items: centre">
-                                <tr class="tablehead_box"> 
+                                <tr>
                                     <th>ID</th>
                                     <th>Product title</th>
                                     <th>Brand</th>

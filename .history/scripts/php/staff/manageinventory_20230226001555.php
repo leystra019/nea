@@ -61,45 +61,46 @@
                         </div>
                     </div>
                     <div id="inventory_table">
-                        <table class="inventory_table" style= "border-collapse: collapse" align="center" width="95%" >
-                            <thead style="justify-items: centre">
-                                <tr class="tablehead_box"> 
-                                    <th>ID</th>
-                                    <th>Product title</th>
-                                    <th>Brand</th>
-                                    <th>Description</th>
-                                    <th>Category</th>
-                                    <th>Subcategory</th>
-                                    <th>Price</th>
-                                    <th>Stock</th>
-                                    <th>Actions</th>
-                                </tr>
-                            </thead>
-                            <tbody>
+                        <div class="table_container">
+                            <table class="inventory_table" style= "border-collapse: collapse" align="center" width="95%" >
+                                <thead style="justify-items: centre">
+                                    <tr class="tablehead_box"> 
+                                        <th>ID</th>
+                                        <th>Product title</th>
+                                        <th>Brand</th>
+                                        <th>Description</th>
+                                        <th>Category</th>
+                                        <th>Subcategory</th>
+                                        <th>Price</th>
+                                        <th>Stock</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
 
-                            <?php
-                                // Retrieve the product data from the database
-                                $query = "SELECT product_id, title, brand, description, category, subcategory, price, stock_level FROM product_stock";
-                                $result = mysqli_query($conn, $query);
-                                // We want to display the product data fetched into our table
-                                if ($result) {
-                                    while ($row = mysqli_fetch_array($result)) {
-                                        echo "<tr class='tableprod'>";
-                                        echo "<td>" . $row['product_id'] . "</td>";
-                                        echo "<td>" . $row['title'] . "</td>";
-                                        echo "<td>" . $row['brand'] . "</td>";
-                                        echo "<td>" . $row['description'] . "</td>";
-                                        echo  "<td>" . $row['category'] . "</td>";
-                                        echo  "<td>" . $row['subcategory'] . "</td>";
-                                        echo  "<td>" . $row['price'] . "</td>";
-                                        echo  "<td>" . $row['stock_level'] . "</td>";
-                                        // we need the action buttons to have slightly different names and fields to the orders action buttons, ie. we don't need a status button
-                                        echo "<td> <button class='button' id='edit_product_button' data-product-id='" . $row['product_id'] . "' data-title='" . $row['title'] . "' data-brand='" . $row['brand'] . "' data-description='" . $row['description'] . "' data-category='" . $row['category'] . "' data-subcategory='" . $row['subcategory'] . "' data-price='" . $row['price'] . "' data-stock='" . $row['stock_level'] . "'>Edit</button> <button class='button'  id='delete_product_button'>Delete</button></td>";
-                                        echo "</tr>";
+                                <?php
+                                    // Retrieve the product data from the database
+                                    $query = "SELECT product_id, title, brand, description, category, subcategory, price, stock_level FROM product_stock";
+                                    $result = mysqli_query($conn, $query);
+                                    // We want to display the product data fetched into our table
+                                    if ($result) {
+                                        while ($row = mysqli_fetch_array($result)) {
+                                            echo "<tr class='tableprod'>";
+                                            echo "<td>" . $row['product_id'] . "</td>";
+                                            echo "<td>" . $row['title'] . "</td>";
+                                            echo "<td>" . $row['brand'] . "</td>";
+                                            echo "<td>" . $row['description'] . "</td>";
+                                            echo  "<td>" . $row['category'] . "</td>";
+                                            echo  "<td>" . $row['subcategory'] . "</td>";
+                                            echo  "<td>" . $row['price'] . "</td>";
+                                            echo  "<td>" . $row['stock_level'] . "</td>";
+                                            // we need the action buttons to have slightly different names and fields to the orders action buttons, ie. we don't need a status button
+                                            echo "<td> <button class='button' id='edit_product_button' data-product-id='" . $row['product_id'] . "' data-title='" . $row['title'] . "' data-brand='" . $row['brand'] . "' data-description='" . $row['description'] . "' data-category='" . $row['category'] . "' data-subcategory='" . $row['subcategory'] . "' data-price='" . $row['price'] . "' data-stock='" . $row['stock_level'] . "'>Edit</button> <button class='button'  id='delete_product_button'>Delete</button></td>";
+                                            echo "</tr>";
+                                        }
                                     }
-                                }
-                            ?>
-                            </tbody>
+                                ?>
+                                </tbody>
                             <!-- This is the modal that appears when the staff member wants to edit their inventory -->
                             <div class="product-modal">
                                 <div class="modal-content">
