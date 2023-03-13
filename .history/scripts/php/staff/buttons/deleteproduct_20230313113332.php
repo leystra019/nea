@@ -22,11 +22,6 @@
         $stmt = mysqli_prepare($conn, $query);
         mysqli_stmt_bind_param($stmt, "i", $product_id);
         mysqli_stmt_execute($stmt);
-
-
-        // Once this is done we want to redirect the user back to the manage inventory page (their previous location)
-        header('Location: /neatest/scripts/php/staff/Manageinventory.php');
-        exit;
     }
       
     

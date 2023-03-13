@@ -1,5 +1,5 @@
 document.querySelector('.close').addEventListener('click', function() {
-    document.querySelector('.product-modali').style.display = 'none';
+    document.querySelector('.product-modal').style.display = 'none';
 });
 
 

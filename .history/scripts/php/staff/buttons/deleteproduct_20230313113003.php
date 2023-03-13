@@ -15,18 +15,14 @@
     if (isset($_POST['product_id'])) {
         // Here we are setting the variables to use later
         $product_id = $_POST['product_id'];
+        $quantity = $_POST['stock_level'];
       
         // This is where we perform the deletion query using values of product_id
         // To avoid sql injection we need to bind the parameters
-        $query = "DELETE FROM product_stock WHERE product_id = ?";
+        $query = "UPDATE product_stock SET stock_level -= 1 WHERE product_id = ?";
         $stmt = mysqli_prepare($conn, $query);
-        mysqli_stmt_bind_param($stmt, "i", $product_id);
+        mysqli_stmt_bind_param($stmt, "ii", $quantity, $product_id);
         mysqli_stmt_execute($stmt);
-
-
-        // Once this is done we want to redirect the user back to the manage inventory page (their previous location)
-        header('Location: /neatest/scripts/php/staff/Manageinventory.php');
-        exit;
     }
       
     

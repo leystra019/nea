@@ -1,5 +1,5 @@
 document.querySelector('.close').addEventListener('click', function() {
-    document.querySelector('.product-modali').style.display = 'none';
+    document.querySelector('.product-modal').style.display = 'none';
 });
 
 
@@ -13,7 +13,6 @@ document.querySelector('#inventory_table').addEventListener('click', function(ev
 
         // populate the form with the row's data
         var productID = row.cells[0].textContent;
-        
         var ProductTitle = row.cells[1].textContent;
         var Brand = row.cells[2].textContent;
         var Description = row.cells[3].textContent;
@@ -22,20 +21,20 @@ document.querySelector('#inventory_table').addEventListener('click', function(ev
         var Price = row.cells[6].textContent;
         var Stock = row.cells[7].textContent;
 
-        document.querySelector('.product-modali input[name="product_id"]').value = productID;
-        document.querySelector('.product-modali input[name="title"]').value = ProductTitle;
-        document.querySelector('.product-modali input[name="brand"]').value = Brand;
-        document.querySelector('.product-modali input[name="description"]').value = Description;
-        document.querySelector('.product-modali input[name="category"]').value = category;
-        document.querySelector('.product-modali input[name="subcategory"]').value = Subcategory;
-        document.querySelector('.product-modali input[name="price"]').value = Price;
-        document.querySelector('.product-modali input[name="stock"]').value = Stock;
+        document.querySelector('.product-modal input[name="product_id"]').value = productID;
+        document.querySelector('.product-modal input[name="title"]').value = ProductTitle;
+        document.querySelector('.product-modal input[name="brand"]').value = Brand;
+        document.querySelector('.product-modal input[name="description"]').value = Description;
+        document.querySelector('.product-modal input[name="category"]').value = category;
+        document.querySelector('.product-modal input[name="subcategory"]').value = Subcategory;
+        document.querySelector('.product-modal input[name="price"]').value = Price;
+        document.querySelector('.product-modal input[name="stock"]').value = Stock;
 
         // display the form
         document.querySelector('.product-modali').style.display = 'flex';
 
         // get the form data
-        var form = document.querySelector('.product-modali form');
+        var form = document.querySelector('.product-modal form');
         var formData = new FormData(form);
 
         // send the form data to the server using fetch
