@@ -44,33 +44,33 @@
                     }
                 ?>
 
-                <div class="success_cards">
-                    <div class="stockn">
-                        <span>Stock Held</span>
-                    </div>
-                    <div class="Stock-sold">
-                        <span>Stock sold</span>
-                    </div>
-                    <div class="Spent">
-                        <span>Inventory cost</span>
-                    </div>
-                    <div class="Profit">
-                        <span>Profit</span>
-                    </div>
+                <div class="stockn">
+                    <span>Stock Held</span>
                 </div>
-                <div class="card_container">
-                    <div class="graph_card">
-                        <header>Sales portfolio</header>
-                    </div>
-                    <div class="extra_cards">
-                        <div class="sale_breakdown">
+                <div class="Stock-sold">
+                    <span>Stock sold</span>
+                </div>
+                <div class="Spent">
+                    <span>Inventory cost</span>
+                </div>
+                <div class="Profit">
+                    <span>Profit</span>
+                </div>
+            </div>
+
+            <div class="card_container">
+                <div class="graph_card">
+                    <header>Sales portfolio</header>
+                </div>
+                <div class="extra_cards">
+                    <div class="sale_breakdown">
                         <header>Sales Breakdown</header>
-                        </div>
-                        <div class="calendar">
+                    </div>
+                    <div class="calendar">
                         <header>Calendar tasks</header>
-                        </div>
                     </div>
                 </div>
+            </div>
             </div>
         </main>
     </div>

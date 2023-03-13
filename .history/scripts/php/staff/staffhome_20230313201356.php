@@ -46,16 +46,16 @@
 
                 <div class="success_cards">
                     <div class="stockn">
-                        <span>Stock Held</span>
+                        <a href ="#">Stock Held</a>
                     </div>
                     <div class="Stock-sold">
-                        <span>Stock sold</span>
+                        <a href="#">Stock sold</a>
                     </div>
                     <div class="Spent">
-                        <span>Inventory cost</span>
+                        <a href ="#">Inventory cost</a>
                     </div>
                     <div class="Profit">
-                        <span>Profit</span>
+                        <a href="#">Profit</a>
                     </div>
                 </div>
                 <div class="card_container">

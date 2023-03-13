@@ -25,22 +25,19 @@
     <link rel="stylesheet" href="/neatest/scripts/css/main.css">
     <link rel="stylesheet" href="/neatest/scripts/css/staff/order.css">
     <link rel="stylesheet" href="/neatest/scripts/css/staff/inventory.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="container">
         <nav class="sidebar" id="sidebar">
             <a href="/neatest/scripts/php/staff/staffhome.php"><i class="fa-solid fa-home" style="margin-top: 32px; margin-left: 16px; font-size: 31px; color: #FFFFFF;"></i></a>
-            <a href="/neatest/scripts/php/staff/manageorder.php"><i class="fa-solid fa-receipt" style="margin-top: 42px; margin-left: 20px; font-size: 31px; color: #FFFFFF;"></i></a>
-            <a href="/neatest/scripts/php/staff/manageinventory.php"><i class="fa-solid fa-box" style="margin-top: 42px; margin-left: 16px; font-size: 31px; color: #FFFFFF;"></i></a>
         </nav>
         <div class="bg">
             <main>
                 <div class="card">
                     <div style="z-index: 1;" class="taskbarcontainer">
-                        <h1>Products</h1>
+                        <h1>Tasks</h1>
                         <!-- we need to create a function that searches for products by title -->
-                        <input type="text" id ="prodsrch" onkeyup="searchproductsFunction()" placeholder="Search for product...">
+                        <input type="text" id ="tasksrch" onkeyup="searchproductsFunction()" placeholder="Search for task(s)...">
                     </div>
                     <div id="inventory_table">
                         <table class="inventory_table" style= "border-collapse: collapse" align="center" width="95%" >

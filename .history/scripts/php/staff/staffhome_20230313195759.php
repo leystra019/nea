@@ -31,8 +31,6 @@
     <div class="container">
         <nav class="sidebar" id="sidebar">
             <a href="/neatest/scripts/php/staff/staffhome.php"><i class="fa-solid fa-home" style="margin-top: 32px; margin-left: 16px; font-size: 31px; color: #FFFFFF;"></i></a>
-            <a href="/neatest/scripts/php/staff/manageorder.php"><i class="fa-solid fa-receipt" style="margin-top: 42px; margin-left: 20px; font-size: 31px; color: #FFFFFF;"></i></a>
-            <a href="/neatest/scripts/php/staff/manageinventory.php"><i class="fa-solid fa-box" style="margin-top: 42px; margin-left: 16px; font-size: 31px; color: #FFFFFF;"></i></a>
         </nav>
         <main>
             <div class="bg">
@@ -46,16 +44,16 @@
 
                 <div class="success_cards">
                     <div class="stockn">
-                        <span>Stock Held</span>
+                        <a href ="#">Stock Held</a>
                     </div>
                     <div class="Stock-sold">
-                        <span>Stock sold</span>
+                        <a href="#">Stock sold</a>
                     </div>
                     <div class="Spent">
-                        <span>Inventory cost</span>
+                        <a href ="#">Inventory cost</a>
                     </div>
                     <div class="Profit">
-                        <span>Profit</span>
+                        <a href="#">Profit</a>
                     </div>
                 </div>
                 <div class="card_container">

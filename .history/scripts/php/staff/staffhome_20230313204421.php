@@ -47,6 +47,8 @@
                 <div class="success_cards">
                     <div class="stockn">
                         <span>Stock Held</span>
+                        <div class="stockn_icon">
+                        <i class="fa-solid fa-home" style="margin-top: 28px; margin-left: 24px; font-size: 31px; color: #FFFFFF;"></i>
                     </div>
                     <div class="Stock-sold">
                         <span>Stock sold</span>

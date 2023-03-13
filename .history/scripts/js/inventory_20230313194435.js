@@ -38,7 +38,7 @@ document.querySelector('#inventory_table').addEventListener('click', function(ev
         var form = document.querySelector('.product-modali form');
         var formData = new FormData(form);
 
-        // We send the form data to the server using fetch
+        // send the form data to the server using fetch
         fetch('/neatest/scripts/php/staff/buttons/editinventory.php', {
             method: 'POST',
             body: formData
@@ -46,31 +46,29 @@ document.querySelector('#inventory_table').addEventListener('click', function(ev
     }
 });
 
+// add click event listener to the table
 document.querySelector('#inventory_table').addEventListener('click', function(event) {
     // check if the clicked element is the "delete" button
     if (event.target.matches('#delete_product_button')) {
-        // ask for confirmation before deleting the product
-        if (confirm("Are you sure you want to delete this product?")) {
-            // get the row element containing the clicked button
-            var row = event.target.closest('tr');
-            
+        // get the row element containing the clicked button
+        var row = event.target.closest('tr');
+        
 
-            // We need to get the product ID from the first column in the row
-            var product_id = row.cells[0].textContent;
+        // We need to get the product ID from the first column in the row
+        var product_id = row.cells[0].textContent;
 
-            // We have to send an AJAX request to delete the product
-            var xhr = new XMLHttpRequest();
-            xhr.open("POST", "/neatest/scripts/php/staff/buttons/deleteproduct.php", true);
-            xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-            xhr.onreadystatechange = function() {
-                if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
-                    // reload the page to show the inventory table with the product removed
-                    location.reload();
-                }
-            };
+        // send an AJAX request to delete the product
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", "/neatest/scripts/php/staff/buttons/deleteproduct.php", true);
+        xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+                // reload the page to show the inventory table with the product removed
+                location.reload();
+            }
+        };
 
-            xhr.send("&product_id=" + product_id);
-        }
+        xhr.send("&product_id=" + product_id);
       
 
 

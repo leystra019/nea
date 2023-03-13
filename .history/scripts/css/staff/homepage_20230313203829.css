@@ -19,8 +19,6 @@ div.l_side {
 
   .success_cards span {
     font-size: 24px;
-    padding-top: 25px !important;
-    color: #A5A2A2;
   }
   
   .success_cards {
@@ -208,11 +206,4 @@ div.l_side {
   .card_container {
     display: flex;
     flex-direction: row;
-  }
-
-  header {
-    margin-top: 48px;
-    margin-left: 24px;
-    color: #A5A2A2;
-    font-size: 24px;
   }
