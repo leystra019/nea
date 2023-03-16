@@ -8,11 +8,11 @@
     if ($conn->connect_error) {
       die('Connection failed: ' . $conn->connect_error);
     }
-    // check it is a staff that has logged on
-    if ($_SESSION['session_auth'] == 0 || $_SESSION['session_auth'] == 2) {
-        // if it is a regular user or the staff hasn't logged on we need to send the user to staff login
-        header('location: /neatest/scripts/php/login/slogin.php');
-    }   
+    // // check it is a staff that has logged on
+    // if ($_SESSION['session_auth'] == 0 || $_SESSION['session_auth'] == 2) {
+    //     // if it is a regular user or the staff hasn't logged on we need to send the user to staff login
+    //     header('location: /neatest/scripts/php/login/slogin.php');
+    // }   
 
 ?>
 
